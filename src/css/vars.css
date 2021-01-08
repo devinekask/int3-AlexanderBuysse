@@ -1,14 +1,5 @@
 :root {
   --mainColor: #f2e054;
-  --darkColor: #343333;
-  --darkestColor: #212020;
-  --importantColor: #f2b554;
-  --grey: #b1b1b1;
-  --white: white;
-  --margin: 1.2rem;
-  --borderShadow: .8rem .8rem rgba(255, 255, 255, .73);
-  --mainFontSize: 1.5rem;
-  --titleFontSize: 2rem;
 }
 
 @custom-media --only-smallest-screen (width >= 400px);

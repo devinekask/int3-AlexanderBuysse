@@ -12,12 +12,8 @@ if (file_exists("../.env")) {
 
 $routes = array(
   'home' => array(
-    'controller' => 'Steal',
+    'controller' => 'Maker',
     'action' => 'index'
-  ),
-  'detail' => array(
-    'controller' => 'Steal',
-    'action' => 'detail'
   )
 );
 

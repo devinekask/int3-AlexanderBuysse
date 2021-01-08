@@ -2,7 +2,7 @@
 
 require_once( __DIR__ . '/DAO.php');
 
-class StealDAO extends DAO {
+class MakerDAO extends DAO {
 
 }
 

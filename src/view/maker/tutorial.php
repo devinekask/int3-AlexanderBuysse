@@ -51,7 +51,9 @@
 
     <div class="step-interact">
       <div class="step-interact__saw">
-        <img class="step-interact__image" src="./assets/img/zaag1.png" alt="plank interact" width="215">
+        <div class="step-interact__yellowLine">
+          <img class="step-interact__image" src="./assets/img/zaagFull.png" alt="plank interact" width="200">
+        </div>
       </div>
       <div class="step-interact__wood">
         <img src="./assets/img/plankInteract.png" alt="plank interact" width="280" height="200">

@@ -50,6 +50,22 @@
   grid-row-gap: 1rem;
 }
 
+.step-interact__saw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-interact__image {
+  margin-top: -2rem;
+}
+
+.step-interact__wood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .step-sources {
   grid-area: content1;
 }

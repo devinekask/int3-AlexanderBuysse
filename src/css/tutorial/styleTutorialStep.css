@@ -61,3 +61,8 @@
   padding: .5rem;
   background-color: var(--backgroundWhite);
 }
+
+.step-interact__yellowLine {
+  border: solid var(--mainColor) .3rem;
+  padding: 0 4rem;
+}

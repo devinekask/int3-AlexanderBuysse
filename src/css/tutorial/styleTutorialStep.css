@@ -12,8 +12,52 @@
   margin-left: 1rem;
 }
 
+.step__goal {
+  background-color: var(--mainColor);
+  padding: 2rem 0;
+}
+
+.step-one__text {
+  color: var(--backgroundWhite);
+}
+
+.stepGoal-title {
+  font-size: 3.3rem;
+}
+
+.step__goal-label {
+  display: flex;
+  cursor: pointer;
+}
+
 .step__title {
   display: flex;
   align-items: center;
   margin-left: 4rem;
+}
+
+.step-sources__item {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--backgroundWhite);
+  margin-right: 1rem;
+}
+
+.step-sources__image {
+  transform: rotate(50deg);
+}
+
+.step-interact__image {
+  transform: rotate(15deg);
+}
+
+.step-interact__saw {
+  background-color: var(--backgroundWhite);
+  width: 100%;
+  height: 20vw;
+}
+
+.step-interact__wood {
+  padding: .5rem;
+  background-color: var(--backgroundWhite);
 }

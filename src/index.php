@@ -14,6 +14,10 @@ $routes = array(
   'home' => array(
     'controller' => 'Maker',
     'action' => 'index'
+  ),
+  'tutorial' => array(
+    'controller' => 'Maker',
+    'action' => 'tutorial'
   )
 );
 

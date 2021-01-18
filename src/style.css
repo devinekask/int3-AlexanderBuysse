@@ -17,3 +17,14 @@ html {
 html, body {
   width: 100%;
 }
+
+body {
+  font-family: brandon-grotesque,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1rem;
+}
+
+.button-home {
+  border: solid var(--mainColor) .6rem
+}

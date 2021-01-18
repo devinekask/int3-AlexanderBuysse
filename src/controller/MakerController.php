@@ -14,4 +14,8 @@ class MakerController extends Controller
   public function index(){
 
   }
+
+  public function tutorial(){
+
+  }
 }

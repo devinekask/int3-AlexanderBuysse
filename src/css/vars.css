@@ -1,5 +1,7 @@
 :root {
-  --mainColor: #f2e054;
+  --mainColor: #fae438;
+  --mainbBlack: #393939;
+  --backgroundWhite: #f4f4f4;
 }
 
 @custom-media --only-smallest-screen (width >= 400px);

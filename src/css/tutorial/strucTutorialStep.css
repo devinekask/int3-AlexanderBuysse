@@ -1,0 +1,16 @@
+.step-black {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 4vw;
+  grid-template-areas: 'content content content content content navi';
+}
+
+.step__title {
+  grid-area: content;
+}
+
+.step__title-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

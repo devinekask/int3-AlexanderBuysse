@@ -1,0 +1,19 @@
+.step-black {
+  background-color: var(--mainBlack);
+  padding: 15vw 5vw 0;
+}
+
+.step__title-number {
+  color: var(--mainBlack);
+  background-color: var(--backgroundWhite);
+  border-radius: 20rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+}
+
+.step__title {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+}

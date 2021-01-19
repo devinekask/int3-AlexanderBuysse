@@ -38,6 +38,7 @@
 
 
   <article class="step-black">
+    <img src="./assets/img/navi.png" alt="navi" class="step-black__image">
     <h2 class="section-title white-color step__title">Stap <span class="step__title-number">1</span></h2>
 
     <div class="step-sources">
@@ -52,6 +53,9 @@
     <div class="step-interact">
       <div class="step-interact__saw">
         <div class="step-interact__yellowLine">
+          <div class="step-interact__button">
+            <img src="./assets/img/hand.png" alt="hand" width="20">
+          </div>
           <img class="step-interact__image" src="./assets/img/zaagFull.png" alt="plank interact" width="200">
         </div>
       </div>
@@ -72,5 +76,8 @@
       </label>
     </section>
   </article>
+  <div class="arrow-after">
+  </div>
+
 
 </main>

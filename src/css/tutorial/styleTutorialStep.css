@@ -1,6 +1,19 @@
 .step-black {
   background-color: var(--mainBlack);
-  padding: 15vw 5vw 0;
+  padding: 15vw 5vw;
+}
+
+/*.step-interact {
+  border: dashed .5rem grey;
+}*/
+
+.arrow-after {
+  content: '';
+  background-image: url(../../assets/img/arrowReverseMobile.png);
+  height: 24vw;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .step__title-number {
@@ -65,4 +78,16 @@
 .step-interact__yellowLine {
   border: solid var(--mainColor) .3rem;
   padding: 0 4rem;
+}
+
+.step-interact__button {
+  background-color: var(--mainColor);
+  border-radius: 20rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: grab;
 }

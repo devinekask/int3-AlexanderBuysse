@@ -6,6 +6,11 @@
   grid-template-areas: 'content content content content content navi' 'content1 content1 content1 content1 content1 navi' 'content2 content2 content2 content2 content2 navi' 'content3 content3 content3 content3 content3 content3';
 }
 
+.step-black__image {
+  margin-left: -35vw;
+  margin-top: 10vw;
+}
+
 .step__title {
   grid-area: content;
 }
@@ -68,4 +73,14 @@
 
 .step-sources {
   grid-area: content1;
+}
+
+.step-interact__yellowLine {
+  position: relative;
+}
+
+.step-interact__button {
+  position: absolute;
+  top: 14%;
+  left: 40%;
 }

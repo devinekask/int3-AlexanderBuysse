@@ -25,18 +25,21 @@
 }
 
 .header-background {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .header__items {
   margin-top: 1.5rem;
   display: flex;
-  flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .header-section__buttons {
   margin-top: 3rem;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header-section__ready {

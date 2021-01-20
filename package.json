@@ -30,11 +30,13 @@
     "heroku-postbuild": "yarn prod"
   },
   "browserslist": [
-  "last 2 versions",
-  "> 1%",
-  "not dead"
- ],
-  "repository": "https://github.com/devinekask/plan-it-aspeslagh-buysse",
-  "author": "alexanderBuysse <alexander.buysse@student.howest.be>"
-
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ],
+  "repository": "https://github.com/devinekask/int3-AlexanderBuysse",
+  "author": "alexanderBuysse <alexander.buysse@student.howest.be>",
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
+  }
 }

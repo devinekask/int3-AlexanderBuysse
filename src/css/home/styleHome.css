@@ -1,0 +1,26 @@
+.header-home__bigtext {
+  background-color: var(--mainBlack);
+  color: var(--backgroundWhite);
+}
+
+.home__bigtext-text {
+  max-width: 37.5rem;
+  padding-bottom: 15rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.header-home__empha {
+  color: var(--mainColor);
+}
+
+.floor-hovercraft {
+  background-color: var(--mainBlack);
+}
+
+.button-eye:hover {
+  content: '';
+  background-image: url(../../assets/img/arrowMobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

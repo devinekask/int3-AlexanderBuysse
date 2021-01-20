@@ -7,8 +7,10 @@
         <h1 class="header__title d3">BOUW JE EIGEN <span class="header__title-bold">HOVERCRAFT</span></h1>
       </div>
       <div class="header__makerfaire-plug">
-        <img class="header__makerfaire-logo" src="./assets/img/Gent_Maker_logo_2020.png" alt="logo maker faire" width="58" hieght="">
-        <p class="header__makerfaire-text">iniatief van</p>
+        <a href="">
+          <img class="header__makerfaire-logo" src="./assets/img/Gent_Maker_logo_2020.png" alt="logo maker faire" width="58" hieght="">
+          <p class="header__makerfaire-text">iniatief van</p>
+        </a>
       </div>
         <img src="./assets/img/hovercraft.png" class="header-home__image" width="300" srcset="" alt="Hovercraft" />
       <div class="floor-hovercraft">

@@ -8,14 +8,18 @@
 }
 
 .header-background {
-  background-image: url('../../assets/img/lineheaderMobile.svg');
+  background-image: url(../../assets/img/lineheaderMobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+
+  @media (--only-medium-screen) {
+    background-image: url(../../assets/svg/lineIpad.svg);
+  }
 }
 
 .header__title {
-  font-family: brandon-grotesque,sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 6vw;
@@ -26,7 +30,7 @@
 }
 
 .section-title {
-  font-family: brandon-grotesque,sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 2.4rem;

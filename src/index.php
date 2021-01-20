@@ -18,6 +18,10 @@ $routes = array(
   'tutorial' => array(
     'controller' => 'Maker',
     'action' => 'tutorial'
+  ),
+  'shop' => array(
+    'controller' => 'Maker',
+    'action' => 'shop'
   )
 );
 

@@ -18,4 +18,8 @@ class MakerController extends Controller
   public function tutorial(){
 
   }
+
+  public function shop(){
+    
+  }
 }

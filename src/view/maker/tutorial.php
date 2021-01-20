@@ -83,6 +83,48 @@
   </div>
   <div class="arrow-after">
   </div>
+  <article class="step">
+      <h2 class="section-title step__title">Stap <span class="step__title-number-white">2</span></h2>
 
+      <div class="step-sources">
+        <ul class="step-sources__items">
+          <li class="step-sources__item-white"><img src="./assets/img/hout1wit.png" alt="hout" class="step-sources__image" width="90"></li>
+          <li class="step-sources__item-white"><img src="./assets/img/bladblazerwit.png" alt="bladblazer" width="67"></li>
+        </ul>
+        <p class="step-one__text-black">Zaag een gat ter grootte van een bladblazermondstuk in je de eerste cirkel.</p>
+      </div>
+
+      <div class="step-interact">
+        <div class="step-interact__saw-black">
+          <div class="step-interact__yellowLine">
+            <div class="step-interact__button">
+              <img src="./assets/img/hand.png" alt="hand" width="20">
+            </div>
+            <div>
+              <img src="" alt="">
+            </div>
+            <img class="step-interact__image-white" src="./assets/img/sawfullwit.png" alt="plank interact" width="150">
+          </div>
+        </div>
+        <div>
+          <img src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
+        </div>
+        <div class="step-interact__wood-black">
+          <img src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
+        </div>
+      </div>
+
+      <section class="step__goal">
+        <h2 class="section-title stepGoal-title">To Do</h2>
+
+        <label class="step__goal-label">
+          <p class="section-title step__goal-title">Meet het bladblazer- <br> mondstuk</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+        </label>
+
+        <label class="step__goal-label">
+          <p class="section-title step__goal-title">Snij gat in cirkel 1</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+        </label>
+      </section>
+    </article>
 
 </main>

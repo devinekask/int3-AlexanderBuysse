@@ -3,6 +3,10 @@
   padding: 15vw 5vw;
 }
 
+.step {
+  padding: 15vw 5vw;
+}
+
 .step-interact {
   border: dashed .5rem grey;
 }
@@ -25,6 +29,15 @@
   margin-left: 1rem;
 }
 
+.step__title-number-white {
+  background-color: var(--mainBlack);
+  color: var(--backgroundWhite);
+  border-radius: 20rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+}
+
 .step__goal {
   background-color: var(--mainColor);
   padding: 2rem 0;
@@ -32,6 +45,10 @@
 
 .step-one__text {
   color: var(--backgroundWhite);
+}
+
+.step-one__text-black {
+  color: var(--mainblack);
 }
 
 .stepGoal-title {
@@ -56,11 +73,22 @@
   margin-right: 1rem;
 }
 
+.step-sources__item-white {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--mainBlack);
+  margin-right: 1rem;
+}
+
 .step-sources__image {
   transform: rotate(50deg);
 }
 
 .step-interact__image {
+  transform: rotate(15deg);
+}
+
+.step-interact__image-white {
   transform: rotate(15deg);
 }
 
@@ -70,9 +98,20 @@
   height: 20vw;
 }
 
+.step-interact__saw-black {
+  background-color: var(--mainBlack);
+  width: 94%;
+  height: 20vw;
+}
+
 .step-interact__wood {
   padding: .5rem;
   background-color: var(--backgroundWhite);
+}
+
+.step-interact__wood-black {
+  padding: .5rem;
+  background-color: var(--mainBlack);
 }
 
 .step-interact__yellowLine {

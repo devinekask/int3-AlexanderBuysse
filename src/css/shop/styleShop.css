@@ -1,0 +1,34 @@
+.shop-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: var(--backgroundWhite);
+}
+
+.shop-section__grap {
+  background-color: white;
+}
+
+.shop-section__price {
+  background-color: var(--mainColor);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 20rem;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.shop-section__text {
+  background-color: var(--mainBlack);
+  padding: 2.3rem;
+}
+
+.shop-section__title {
+  font-size: 4.5rem;
+}
+
+.shop-button {
+  background-color: var(--backgroundWhite);
+  padding: .5rem 0;
+  width: 13rem;
+  text-align: center;
+}

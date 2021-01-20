@@ -1,6 +1,6 @@
 <main class="container container-home">
     <nav class="home-navi">
-      <a href="index.php?page=tutorial" class="button">Koop <br> benodigdheden</a>
+      <a href="index.php?page=shop" class="button">Koop <br> benodigdheden</a>
     </nav>
     <article class="header header-home">
       <div class="header-background">

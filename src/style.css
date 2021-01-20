@@ -7,6 +7,8 @@
 @import '../src/css/home/strucHome.css';
 @import '../src/css/home/styleHome.css';
 @import '../node_modules/@splidejs/splide/dist/css/splide-core.min.css';
+@import '../src/css/shop/strucShop.css';
+@import '../src/css/shop/styleShop.css';
 
 /*stylelint-disable*/
 *,
@@ -67,6 +69,10 @@ a {
   text-align: center;
   text-overflow: clip;
   text-shadow: -3px 0 1px rgba(30, 242, 242, 0.507) , 3px 0 1px rgba(246, 5, 9, 0.5);
+}
+
+.display-none {
+  display: none;
 }
 
 .white-color {

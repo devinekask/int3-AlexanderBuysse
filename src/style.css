@@ -51,13 +51,21 @@ a {
   width: 15rem;
   text-align: center;
   z-index: 2;
+
+  @media (--only-biggerSmall-screen) {
+    text-align: center;
+    margin-left: 1rem;
+    max-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .d3 {
   color: var(--mainBlack);
   text-align: center;
   text-overflow: clip;
-  letter-spacing: 3px;
   text-shadow: -3px 0 1px rgba(30, 242, 242, 0.507) , 3px 0 1px rgba(246, 5, 9, 0.5);
 }
 

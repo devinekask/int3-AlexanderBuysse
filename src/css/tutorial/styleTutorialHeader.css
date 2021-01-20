@@ -11,6 +11,7 @@
   background-image: url('../../assets/img/lineheaderMobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 .header__title {

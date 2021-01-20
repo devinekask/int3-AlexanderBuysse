@@ -7,6 +7,10 @@
 
 .header {
   margin-top: 10vw;
+
+  @media (--only-medium-screen) {
+    margin-top: 2vw;
+  }
 }
 
 .header-section {
@@ -22,6 +26,10 @@
 
 .header__title-bold {
   margin-top: -.8rem;
+
+  @media (--only-medium-screen) {
+    margin-top: -3rem;
+  }
 }
 
 .header-background {

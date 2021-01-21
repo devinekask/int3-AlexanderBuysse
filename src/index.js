@@ -4,17 +4,17 @@ import Splide from '@splidejs/splide';
   const kits = [
     {
       name: `grondstof`,
-      html: `<li class="shop-basket__item grondstof"><a href="" class="remove"><span>x</span></a> <p>Grondstof kit</p><img src="./assets/img/grondstof.png" alt="schild" width="50"></li>`,
+      html: `<li class="shop-basket__item grondstof"><a id="grondstof" href="" class="remove">x</a> <p>Grondstof kit</p><img src="./assets/img/grondstof.png" alt="schild" width="50"></li>`,
       price: 20
     },
     {
       name: `tool`,
-      html: `<li class="shop-basket__item tool"><a href="" class="remove"><span>x</span></a><p>Gereedschap kit</p><img src="./assets/img/hamer.png" alt="hamer" width="40"></li>`,
+      html: `<li class="shop-basket__item tool"><a id="tool" href="" class="remove"><span>x</span></a><p>Gereedschap kit</p><img src="./assets/img/hamer.png" alt="hamer" width="40"></li>`,
       price: 80
     },
     {
       name: `veiligheid`,
-      html: `<li class="shop-basket__item veiligheid"><a href="" class="remove"><span>x</span></a><p>Veiligheids kit</p><img src="./assets/img/schild.png" alt="schild" width="80"></li>`,
+      html: `<li class="shop-basket__item veiligheid"><a id="veiligheid" href="" class="remove"><span>x</span></a><p>Veiligheids kit</p><img src="./assets/img/schild.png" alt="schild" width="80"></li>`,
       price: 30
     }
   ];
@@ -49,14 +49,34 @@ import Splide from '@splidejs/splide';
           $basket.innerHTML += kit.html;
           changePrice(kit.price);
           changeKits(kit.name);
+
+          //eventlistener voor verwijderen
+          const removeButtons = document.querySelectorAll(`.remove`);
+          if (removeButtons) {
+            removeButtons.forEach(removeButton => {
+              removeButton.addEventListener(`click`, handleClickRemoveButton);
+            });
+          }
         }
       }
     });
   };
 
   const handleClickRemoveButton = e => {
-
-  }
+    e.preventDefault();
+    const kitName = e.target.getAttribute(`id`);
+    kits.forEach(kit => {
+      if (kit.name === kitName) {
+        const $basket = document.querySelector(`.shop-basket__items`);
+        const containsKit = document.querySelector(`.${kitName}`);
+        if (containsKit) {
+          $basket.removeChild(e.target.parentElement);
+          changePrice(- kit.price);
+          changeKits(kit.name);
+        }
+      }
+    });
+  };
 
   const changePrice = price => {
     document.querySelector(`.price`).value = parseInt(document.querySelector(`.price`).value) + price;
@@ -64,9 +84,11 @@ import Splide from '@splidejs/splide';
   };
 
   const changeKits = kitName => {
-    let inputKit = document.querySelector(`.kit${kitName}`).getAttribute(`value`);
-    console.log(inputKit);
-    inputKit = 1 - parseInt(inputKit);
+    const inputKit = document.querySelector(`.kit${kitName}`);
+    let value = inputKit.getAttribute(`value`);
+    console.log(value);
+    value = 1 - parseInt(value);
+    inputKit.setAttribute(`value`, value);
   };
 
 

@@ -9,7 +9,7 @@
 @custom-media --only-biggerSmall-screen (width >= 600px);
 @custom-media --only-medium-screen (width >= 700px);
 @custom-media --only-mediumShop-screen (width >= 744px);
-@custom-media --only-biggerMedium-screen (width >= 1000px);
-@custom-media --only-big-screen (width >= 1160px);
+@custom-media --only-biggerMedium-screen (width >= 900px);
+@custom-media --only-big-screen (width >= 1200px);
 @custom-media --only-stepTwoSmall-screen (width >= 650px);
 @custom-media --only-stepTwoMedium (width >= 920px);

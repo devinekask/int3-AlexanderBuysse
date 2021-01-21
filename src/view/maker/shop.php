@@ -54,7 +54,7 @@
         </div>
     </article>
 
-    <div class="">
+    <div class="shop-basket__grid">
       <article class="shop-basket">
         <h2 class="display-none">Winkelkar</h2>
         <ul class="shop-basket__items">

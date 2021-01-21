@@ -43,6 +43,10 @@ a {
   padding: .2rem 4rem;
 }
 
+em {
+  color: var(--mainColor);
+}
+
 .button-home:hover {
   transform: scale(2);
 }

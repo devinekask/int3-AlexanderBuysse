@@ -7,7 +7,7 @@
         <div class="shop-wrap">
           <section class="shop-section margin-zero">
             <div class="shop-section__grap">
-              <h2 class="section-title shop-section__title d3">Grondstof Kit</h2>
+              <h2 class="section-title shop-section__title">Grondstof Kit</h2>
               <img class="shop-section__image" src="./assets/img/grondstofKit.png" alt="grondstof kit" width="295">
             </div>
             <div class="shop-section__text">
@@ -23,7 +23,7 @@
           </section>
           <section  class="shop-section">
             <div class="shop-section__grap">
-              <h2 class="section-title shop-section__title d3">Gereedschap Kit</h2>
+              <h2 class="section-title shop-section__title">Gereedschap Kit</h2>
               <img class="shop-section__image" src="./assets/img/toolKit.png" alt="tool kit" width="330">
             </div>
             <div class="shop-section__text">
@@ -38,7 +38,7 @@
           </section>
           <section class="shop-section">
             <div class="shop-section__grap">
-              <h2 class="section-title shop-section__title d3">Veiligheids Kit</h2>
+              <h2 class="section-title shop-section__title">Veiligheids Kit</h2>
               <img class="shop-section__image" src="./assets/img/veiligKit.png" alt="veiligheids kit" width="310">
             </div>
             <div class="shop-section__text">
@@ -61,5 +61,40 @@
         <li class="shop-basket__item"></li>
       </ul>
       <img class="shop-basket__image" src="./assets/img/winkelkar.png" alt="winkelkar" width="300">
+    </article>
+    <article class="shop-checkout">
+      <div class="shop-maxwidth">
+        <h2 class="section-title white-color step__title">Bestellen</h2>
+        <p class="step-one__text"> <em>Goed zo!</em> Als je iets bestelt weet je duidelijk van aanpakken. Enkel focussen op de hoofdzaak is heel belangrijk. Vul hieronder je gegevens in en we bezorgen je zo snel mogelijk je pakketje.</p>
+        <form action="post" class="shop-form">
+          <div class="labels-name">
+            <div>
+              <label class="label">
+                <input class="label-input" type="text" placeholder=" " maxlength="35">
+                <p class="label-text">Voornaam</p>
+                <span class="label-counter"></span>
+              </label>
+            </div>
+
+            <label class="label">
+              <input class="label-input" type="text" placeholder=" " maxlength="35">
+              <p class="label-text">Naam</p>
+              <span class="label-counter"></span>
+            </label>
+          </div>
+
+          <div>
+            <label class="label label-adres">
+              <input class="label-input label-adres" type="text" placeholder=" " maxlength="99">
+              <p class="label-text">Adres</p>
+              <span class="label-counter"></span>
+            </label>
+          </div>
+          <div class="shop-confirm">
+            <p class="shop-confirm__price"> PRIJS: €0</p>
+            <input type="submit" name="" id="" class="shop-confirm__submit">
+          </div>
+        </form>
+      </div>
     </article>
 </main>

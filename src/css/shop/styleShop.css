@@ -34,6 +34,10 @@
   text-align: center;
 }
 
+.shop-button-red {
+  background-color: rgb(177, 80, 80);
+}
+
 .shop-basket__item {
   background-color: white;
   width: 15rem;
@@ -100,4 +104,19 @@
   font-style: normal;
   font-size: 1.8rem;
   border: none;
+}
+
+.shop-banner {
+  color: white;
+  text-align: center;
+}
+
+.shop-banner-red {
+  background-color: rgb(177, 80, 80);
+  padding: .2rem 0;
+}
+
+.shop-banner-green {
+  background-color: green;
+  padding: .2rem 0;
 }

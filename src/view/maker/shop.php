@@ -62,33 +62,39 @@
         <img class="shop-basket__image" src="./assets/img/winkelkar.png" alt="winkelkar" width="300">
       </article>
       <article class="shop-checkout">
+        <p class="shop-banner"></p>
         <div class="shop-maxwidth">
           <h2 class="section-title white-color step__title shop-checkout__title">Bestellen</h2>
           <p class="step-one__text text-center"> <em>Goed zo!</em> Als je iets bestelt weet je duidelijk van aanpakken. Enkel focussen op de hoofdzaak is heel belangrijk. Vul hieronder je gegevens in en we bezorgen je zo snel mogelijk je pakketje.</p>
-          <form action="post" class="shop-form" action="index.php?page=shop">
+          <form method="post" class="shop-form" action="index.php?page=shop">
             <input type="hidden" class=kittool name="tool" value="0">
             <input type="hidden" class=kitveiligheid name="veiligheid" value="0">
             <input type="hidden" class=kitgrondstof name="grondstof" value="0">
+            <input type="hidden" name="action" value="placeOrder">
             <div class="labels-name">
               <div>
+                <p class="error"></p>
                 <label class="label">
-                  <input class="label-input" type="text" name="name" placeholder=" " maxlength="35">
+                  <input class="label-input input" required type="text" name="name" placeholder=" " minlength="2" maxlength="35">
                   <p class="label-text">Voornaam</p>
                   <span class="label-counter"></span>
                 </label>
               </div>
-
-              <label class="label">
-                <input class="label-input" type="text" name="sirname" placeholder=" " maxlength="35">
-                <p class="label-text">Naam</p>
-                <span class="label-counter"></span>
-              </label>
+              <div>
+                <p class="error"></p>
+                <label class="label">
+                  <input class="label-input input" type="text" required name="sirname" placeholder=" " minlength="2" maxlength="35">
+                  <p class="label-text">Naam</p>
+                  <span class="label-counter"></span>
+                </label>
+              </div>
             </div>
 
             <div class="label-adresses">
               <p class="label-adres__info"> <img src="./assets/img/info-button.png" alt="info button" width="20"> straatnaam, huisnummer, postcode en stad</p>
+              <p class="error"></p>
               <label class="label label-adres">
-                <input class="label-input label-adres" name="adres" type="text" placeholder=" " maxlength="99">
+                <input class="label-input label-adres input" required name="adres" minlength="10" type="text" placeholder=" " maxlength="99">
                 <p class="label-text">Adres</p>
                 <span class="label-counter"></span>
               </label>

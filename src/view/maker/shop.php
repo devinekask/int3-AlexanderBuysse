@@ -53,8 +53,13 @@
           </section>
         </div>
     </article>
-    <article>
+    <article class="shop-basket">
       <h2 class="display-none">Winkelkar</h2>
-      
+      <ul class="shop-basket__items">
+        <li class="shop-basket__item"></li>
+        <li class="shop-basket__item"></li>
+        <li class="shop-basket__item"></li>
+      </ul>
+      <img class="shop-basket__image" src="./assets/img/winkelkar.png" alt="winkelkar" width="300">
     </article>
 </main>

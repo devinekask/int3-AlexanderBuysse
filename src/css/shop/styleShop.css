@@ -32,3 +32,9 @@
   width: 13rem;
   text-align: center;
 }
+
+.shop-basket__item {
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+}

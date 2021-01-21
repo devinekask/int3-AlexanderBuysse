@@ -63,3 +63,25 @@
 .shop-button__four {
   margin-top: 2.5rem;
 }
+
+.shop-basket__image {
+  width: 70vw;
+}
+
+.shop-basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.shop-basket__items {
+  margin-top: 10rem;
+  margin-bottom: -10rem;
+  margin-right: -3rem;
+}
+
+.shop-basket__item {
+  margin-top: 1.2rem;
+}

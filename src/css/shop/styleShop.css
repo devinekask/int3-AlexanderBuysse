@@ -22,8 +22,9 @@
   padding: 2.3rem;
 }
 
-.shop-section__title {
+.shop-checkout__title {
   font-size: 4.5rem;
+  margin-top: 5rem;
 }
 
 .shop-button {
@@ -64,4 +65,39 @@
   user-select: none;
   color: var(--mainBlack);
   background-color: var(--backgroundWhite);
+}
+
+.label-adres__info {
+  color: rgb(107, 107, 107);
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.shop-confirm__price {
+  color: var(--mainColor);
+}
+
+.shop-confirm__price-bold {
+  font-weight: 800;
+}
+
+.remove {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  border-radius: 20rem;
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-confirm__submit {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  border: none;
 }

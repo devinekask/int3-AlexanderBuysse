@@ -66,11 +66,15 @@
 
 .shop-basket__image {
   width: 70vw;
+  z-index: 2;
 }
 
 .shop-maxwidth {
   max-width: 55rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .shop-basket {
@@ -78,7 +82,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5.5rem;
 }
 
 .shop-basket__items {
@@ -89,6 +93,11 @@
 
 .shop-basket__item {
   margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .label {
@@ -138,13 +147,27 @@
 .labels-name {
   display: flex;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
-.label-adres {
+.label-adresses {
   margin-top: 2rem;
 }
 
 .shop-form {
-  padding: 0 10vw;
+  min-width: 38rem;
+}
+
+.shop-confirm {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.remove {
+  position: absolute;
+  top: 30%;
+  right: -2rem;
 }

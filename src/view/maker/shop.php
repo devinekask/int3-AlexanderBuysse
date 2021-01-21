@@ -53,48 +53,52 @@
           </section>
         </div>
     </article>
-    <article class="shop-basket">
-      <h2 class="display-none">Winkelkar</h2>
-      <ul class="shop-basket__items">
-        <li class="shop-basket__item"></li>
-        <li class="shop-basket__item"></li>
-        <li class="shop-basket__item"></li>
-      </ul>
-      <img class="shop-basket__image" src="./assets/img/winkelkar.png" alt="winkelkar" width="300">
-    </article>
-    <article class="shop-checkout">
-      <div class="shop-maxwidth">
-        <h2 class="section-title white-color step__title">Bestellen</h2>
-        <p class="step-one__text"> <em>Goed zo!</em> Als je iets bestelt weet je duidelijk van aanpakken. Enkel focussen op de hoofdzaak is heel belangrijk. Vul hieronder je gegevens in en we bezorgen je zo snel mogelijk je pakketje.</p>
-        <form action="post" class="shop-form">
-          <div class="labels-name">
-            <div>
+
+    <div class="">
+      <article class="shop-basket">
+        <h2 class="display-none">Winkelkar</h2>
+        <ul class="shop-basket__items">
+          <li class="shop-basket__item"><a href="" class="remove"><span>x</span></a> <p>Grondstof kit</p><img src="./assets/img/grondstof.png" alt="schild" width="50"></li>
+          <li class="shop-basket__item"><a href="" class="remove"><span>x</span></a><p>Gereedschap kit</p><img src="./assets/img/hamer.png" alt="hamer" width="40"></li>
+          <li class="shop-basket__item"><a href="" class="remove"><span>x</span></a><p>Veiligheids kit</p><img src="./assets/img/schild.png" alt="schild" width="80"></li>
+        </ul>
+        <img class="shop-basket__image" src="./assets/img/winkelkar.png" alt="winkelkar" width="300">
+      </article>
+      <article class="shop-checkout">
+        <div class="shop-maxwidth">
+          <h2 class="section-title white-color step__title shop-checkout__title">Bestellen</h2>
+          <p class="step-one__text text-center"> <em>Goed zo!</em> Als je iets bestelt weet je duidelijk van aanpakken. Enkel focussen op de hoofdzaak is heel belangrijk. Vul hieronder je gegevens in en we bezorgen je zo snel mogelijk je pakketje.</p>
+          <form action="post" class="shop-form">
+            <div class="labels-name">
+              <div>
+                <label class="label">
+                  <input class="label-input" type="text" name="name" placeholder=" " maxlength="35">
+                  <p class="label-text">Voornaam</p>
+                  <span class="label-counter"></span>
+                </label>
+              </div>
+
               <label class="label">
-                <input class="label-input" type="text" placeholder=" " maxlength="35">
-                <p class="label-text">Voornaam</p>
+                <input class="label-input" type="text" name="sirname" placeholder=" " maxlength="35">
+                <p class="label-text">Naam</p>
                 <span class="label-counter"></span>
               </label>
             </div>
 
-            <label class="label">
-              <input class="label-input" type="text" placeholder=" " maxlength="35">
-              <p class="label-text">Naam</p>
-              <span class="label-counter"></span>
-            </label>
-          </div>
-
-          <div>
-            <label class="label label-adres">
-              <input class="label-input label-adres" type="text" placeholder=" " maxlength="99">
-              <p class="label-text">Adres</p>
-              <span class="label-counter"></span>
-            </label>
-          </div>
-          <div class="shop-confirm">
-            <p class="shop-confirm__price"> PRIJS: €0</p>
-            <input type="submit" name="" id="" class="shop-confirm__submit">
-          </div>
-        </form>
-      </div>
-    </article>
+            <div class="label-adresses">
+              <p class="label-adres__info"> <img src="./assets/img/info-button.png" alt="info button" width="20"> straatnaam, huisnummer, postcode en stad</p>
+              <label class="label label-adres">
+                <input class="label-input label-adres" name="adres" type="text" placeholder=" " maxlength="99">
+                <p class="label-text">Adres</p>
+                <span class="label-counter"></span>
+              </label>
+            </div>
+            <div class="shop-confirm">
+              <p class="shop-confirm__price"> Prijs: <span class="shop-confirm__price-bold">€0</span></p>
+              <input type="submit" class="shop-confirm__submit button" value="Bestel">
+            </div>
+          </form>
+        </div>
+      </article>
+    </div>
 </main>

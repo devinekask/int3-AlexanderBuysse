@@ -8,7 +8,7 @@ class MakerController extends Controller
 
   function __construct()
   {
-    //$this->stealDAO = new StealDAO();
+    //$this->MakerDAO = new MakerDAO();
   }
 
   public function index(){
@@ -20,6 +20,6 @@ class MakerController extends Controller
   }
 
   public function shop(){
-    
+
   }
 }

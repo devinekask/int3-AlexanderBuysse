@@ -49,14 +49,19 @@ import Splide from '@splidejs/splide';
           changePrice(kit.price);
           changeKits(kit.name);
           changeButton(false, e.target);
+        } else {
+          $basket.removeChild(containsKit);
+          changePrice(- kit.price);
+          changeKits(kit.name);
+          changeButton(true, e.target);
+        }
 
-          //eventlistener voor verwijderen
-          const removeButtons = document.querySelectorAll(`.remove`);
-          if (removeButtons) {
-            removeButtons.forEach(removeButton => {
-              removeButton.addEventListener(`click`, handleClickRemoveButton);
-            });
-          }
+        //eventlistener voor verwijderen
+        const removeButtons = document.querySelectorAll(`.remove`);
+        if (removeButtons) {
+          removeButtons.forEach(removeButton => {
+            removeButton.addEventListener(`click`, handleClickRemoveButton);
+          });
         }
       }
     });
@@ -64,12 +69,18 @@ import Splide from '@splidejs/splide';
 
   const handleClickRemoveButton = e => {
     e.preventDefault();
-    const kitName = e.target.getAttribute(`id`);
+    console.log(`klik`);
+    let kitName = e.target.getAttribute(`id`);
+    if (kitName === null) {
+      kitName = e.target.parentElement.getAttribute(`id`);
+    }
     kits.forEach(kit => {
       if (kit.name === kitName) {
         const $basket = document.querySelector(`.shop-basket__items`);
         const containsKit = document.querySelector(`.${kitName}`);
+        console.log(containsKit);
         if (containsKit) {
+          console.log(`werkt`);
           $basket.removeChild(containsKit);
           changePrice(- kit.price);
           changeKits(kit.name);

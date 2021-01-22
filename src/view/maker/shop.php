@@ -7,7 +7,7 @@
         <div class="shop-wrap">
           <section class="shop-section margin-zero">
             <div class="shop-section__grap">
-              <h2 class="section-title shop-section__title">hallo Grondstof Kit</h2>
+              <h2 class="section-title shop-section__title">Grondstof Kit</h2>
               <img class="shop-section__image" src="./assets/img/grondstofKit.png" alt="grondstof kit" width="295">
             </div>
             <div class="shop-section__text">

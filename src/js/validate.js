@@ -64,11 +64,13 @@
 
   const init = () => {
     const $form = document.querySelector(`.shop-form`);
-    $form.noValidate = false;
-    $form.addEventListener(`submit`, handleSubmitForm);
+    if ($form) {
+      $form.noValidate = false;
+      $form.addEventListener(`submit`, handleSubmitForm);
 
-    const fields = $form.querySelectorAll(`.input`);
-    addValidationListeners(fields);
+      const fields = $form.querySelectorAll(`.input`);
+      addValidationListeners(fields);
+    }
   };
 
   init();

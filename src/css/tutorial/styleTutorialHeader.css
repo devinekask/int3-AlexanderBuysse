@@ -1,21 +1,16 @@
 .tutorial-one::after {
   content: '';
-  background-image: url(../../assets/img/arrowMobile.png);
+  background-image: url(../../assets/img/arrow-mobile.png);
   width: 100vw;
-  height: 22vw;
-  background-repeat: no-repeat;
+  height: 8.8rem;
   background-position: center;
 }
 
 .header-background {
-  background-image: url(../../assets/img/lineheaderMobile.svg);
+  background-image: url(../../assets/img/lineheader-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-
-  @media (--only-medium-screen) {
-    background-image: url(../../assets/svg/lineIpad.svg);
-  }
 }
 
 .header__title {

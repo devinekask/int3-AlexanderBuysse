@@ -8,7 +8,7 @@
           <section class="shop-section margin-zero">
             <div class="shop-section__grap">
               <h2 class="section-title shop-section__title">Grondstof Kit</h2>
-              <img class="shop-section__image" src="./assets/img/grondstofKit.png" alt="grondstof kit" width="295">
+              <img class="shop-section__image" src="./assets/img/grondstof-kit.png" alt="grondstof kit" width="295">
             </div>
             <div class="shop-section__text">
               <ul class="shop-list">
@@ -24,7 +24,7 @@
           <section  class="shop-section">
             <div class="shop-section__grap">
               <h2 class="section-title shop-section__title">Gereedschap Kit</h2>
-              <img class="shop-section__image" src="./assets/img/toolKit.png" alt="tool kit" width="330">
+              <img class="shop-section__image" src="./assets/img/tool-kit.png" alt="tool kit" width="330">
             </div>
             <div class="shop-section__text">
               <ul class="shop-list">
@@ -39,7 +39,7 @@
           <section class="shop-section">
             <div class="shop-section__grap">
               <h2 class="section-title shop-section__title">Veiligheids Kit</h2>
-              <img class="shop-section__image" src="./assets/img/veiligKit.png" alt="veiligheids kit" width="310">
+              <img class="shop-section__image" src="./assets/img/veilig-kit.png" alt="veiligheids kit" width="310">
             </div>
             <div class="shop-section__text">
               <ul class="shop-list">

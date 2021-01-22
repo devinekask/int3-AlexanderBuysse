@@ -13,10 +13,9 @@
 
 .arrow-after {
   content: '';
-  background-image: url(../../assets/img/arrowReverseMobile.png);
-  height: 24vw;
+  background-image: url(../../assets/img/arrow-reverse-mobile.png);
+  height: 8.8rem;
   width: 100vw;
-  background-repeat: no-repeat;
   background-position: center;
 }
 

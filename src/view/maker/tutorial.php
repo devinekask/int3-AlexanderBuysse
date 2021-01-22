@@ -60,11 +60,11 @@
             <div class="step-interact__button">
               <img src="./assets/img/hand.png" alt="hand" width="20">
             </div>
-            <img class="step-interact__image" src="./assets/img/zaagFull.png" alt="plank interact" width="200">
+            <img class="step-interact__image" src="./assets/img/zaag-full.png" alt="plank interact" width="200">
           </div>
         </div>
         <div class="step-interact__wood">
-          <img src="./assets/img/plankInteract.png" alt="plank interact" width="240" height="auto">
+          <img src="./assets/img/plank-interact.png" alt="plank interact" width="240" height="auto">
         </div>
       </div>
 

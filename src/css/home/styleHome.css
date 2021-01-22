@@ -28,7 +28,7 @@
 
 .button-eye:hover {
   content: '';
-  background-image: url(../../assets/img/arrowMobile.png);
+  background-image: url(../../assets/img/arrow-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
 }

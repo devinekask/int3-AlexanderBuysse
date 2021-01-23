@@ -83,11 +83,16 @@
 
   const handleClickSawButton = e => {
     document.querySelector(`.step-interact__circle-one`).innerHTML = `<div class="wood-top"><img src="./assets/img/wood-inproges.png" alt="" width="150"></div>`;
+    document.querySelector(`.step-interact__wood`).innerHTML += `<div class="step-saw" ><img src="./assets/img/zaagdraai.png" class="image-saw-step" id="1" width="100" alt=""></div>`;
+    document.querySelector(`.step-interact__circle-one`).classList.remove(`dashed`);
+    e.target.parentElement.removeChild(e.target);
+    const saw = document.querySelector(`.step-saw`);
+    saw.addEventListener(`click`, handleClick);
+    const woodTop = document.querySelector(`.wood-top`);
+    woodTop.addEventListener(`click`, handleClick);
   };
 
   const init = () => {
-    const saw = document.querySelector(`.step-saw`);
-    saw.addEventListener(`click`, handleClick);
 
     const sawButton = document.querySelector(`.step-interact__image`);
     if (sawButton) {

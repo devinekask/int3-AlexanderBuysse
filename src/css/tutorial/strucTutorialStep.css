@@ -124,13 +124,17 @@
   right: 41%;
   width: 15rem;
   height: 15rem;
-  border: dashed .5rem var(--mainBlack);
   border-radius: 30rem;
   z-index: 2;
 }
 
+.dashed {
+  border: dashed .5rem var(--mainBlack);
+}
+
 .step-saw {
   position: absolute;
+  cursor: pointer;
   top: 38%;
   right: 27%;
   transform: rotate(10deg);
@@ -193,6 +197,7 @@
 
 .wood-top {
   z-index: 2;
+  cursor: pointer;
 }
 
 .step-interact__circle-two {

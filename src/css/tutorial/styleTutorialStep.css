@@ -135,6 +135,7 @@
 
 .step-interact__image {
   transform: rotate(15deg);
+  cursor: pointer;
 }
 
 .step-interact__image-white {

@@ -74,6 +74,11 @@
       newStep(number);
       document.querySelector(`.image-saw-step`).setAttribute(`id`, number + 1);
     }
+
+    if (number === 11) {
+      document.querySelector(`.wood-incomplete`).src = `./assets/img/wood1.png`;
+      document.querySelector(`.check-hout1`).checked = true;
+    }
   };
 
   const newStep = step => {
@@ -82,7 +87,7 @@
   };
 
   const handleClickSawButton = e => {
-    document.querySelector(`.step-interact__circle-one`).innerHTML = `<div class="wood-top"><img src="./assets/img/wood-inproges.png" alt="" width="150"></div>`;
+    document.querySelector(`.step-interact__circle-one`).innerHTML = `<div class="wood-top"><img class="wood-incomplete" src="./assets/img/wood-inproges.png" alt="" width="150"></div>`;
     document.querySelector(`.step-interact__wood`).innerHTML += `<div class="step-saw" ><img src="./assets/img/zaagdraai.png" class="image-saw-step" id="1" width="100" alt=""></div>`;
     document.querySelector(`.step-interact__circle-one`).classList.remove(`dashed`);
     e.target.parentElement.removeChild(e.target);

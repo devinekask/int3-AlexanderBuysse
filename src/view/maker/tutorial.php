@@ -74,11 +74,11 @@
         <h2 class="section-title stepGoal-title">To Do</h2>
         <div claas="step__goal-labels">
           <label class="step__goal-label">
-            <p class="section-title step__goal-title">Zaag de eerste cirkel</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+            <p class="section-title step__goal-title">Zaag de eerste cirkel</p><input class="step__goal-check check-hout1" type="checkbox"><span class="checkmark"></span>
           </label>
 
           <label class="step__goal-label">
-            <p class="section-title step__goal-title">Zaag de tweede cirkel</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+            <p class="section-title step__goal-title">Zaag de tweede cirkel</p><input class="step__goal-check check-hout2" type="checkbox"><span class="checkmark"></span>
           </label>
         </div>
       </section>

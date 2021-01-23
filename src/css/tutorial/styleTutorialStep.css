@@ -208,9 +208,14 @@
 }
 
 .boxtarget {
-  background-color: rgba(221, 221, 221, 0.37);
+  background-color: rgba(221, 221, 221, .37);
   width: 20rem;
   height: 17rem;
+}
+
+.box-width {
+  height: 17.4rem;
+  width: 20rem;
 }
 
 .box.over {
@@ -225,8 +230,7 @@
   content: '';
   background-image: url(../../assets/img/hout-staptwee.png);
   background-size: 20rem 17.4rem;
-  height: 17.4rem;
-  width: 20rem;
+
   background-repeat: no-repeat;
   background-position: center;
 }

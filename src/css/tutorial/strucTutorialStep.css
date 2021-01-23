@@ -142,6 +142,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .step-interact__button {
@@ -154,4 +155,8 @@
   position: absolute;
   right: 3.5rem;
   top: 80.5rem;
+}
+
+.container-target {
+  position: absolute;
 }

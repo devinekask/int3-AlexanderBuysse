@@ -62,6 +62,14 @@
           e.target.classList.remove(`box-image`);
         }
         e.target.innerHTML = e.dataTransfer.getData('text/html');
+        const image = document.querySelector(`.boxtarget`).classList.contains(`box-image`);
+        if (image) {
+          document.querySelector(`.zeil`).src = `./assets/img/zeil-interactie.png`;
+        }
+        const checks = document.querySelectorAll(`.check-zeil`)
+        checks.forEach(check =>{
+          check.checked = true;
+        });
       }
 
       return false;

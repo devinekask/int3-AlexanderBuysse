@@ -150,15 +150,15 @@
               <img src="./assets/img/hand.png" alt="hand" width="20">
             </div>
             <div class="container">
-              <div class="box box-image" draggable="true"></div>
+              <div class="box box-image box-width" draggable="true"></div>
             </div>
           </div>
         </div>
         <div class="step-interact__zeil">
-          <div class="container">
+          <div class="container container-target">
             <div class="box boxtarget" draggable="true"></div>
           </div>
-          <img src="./assets/img/zeil-breekmes.png" alt="plank interact" width="290" height="auto">
+          <img class="zeil" src="./assets/img/zeil-breekmes.png" alt="plank interact" width="330" height="auto">
         </div>
       </div>
 
@@ -167,13 +167,13 @@
         <div class="step__goal-labels">
           <label class="step__goal-label">
             <p class="section-title step__goal-title">Snij een cirkel uit het zeil.</p>
-            <input class="step__goal-check" type="checkbox">
+            <input class="step__goal-check check-zeil" type="checkbox">
             <span class="checkmark"></span>
           </label>
 
           <label class="step__goal-label">
             <p class="section-title step__goal-title">Leg hout op het zeil</p>
-            <input class="step__goal-check" type="checkbox">
+            <input class="step__goal-check check-zeil" type="checkbox">
             <span class="checkmark"></span>
           </label>
         </div>

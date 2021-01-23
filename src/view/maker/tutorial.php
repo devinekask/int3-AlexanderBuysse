@@ -57,13 +57,17 @@
         <div class="step-interact__saw">
           <div class="step-interact__yellowLine">
             <div class="step-interact__button">
-              <img src="./assets/img/hand.png" alt="hand" width="20">
+              <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
-            <img class="step-interact__image" src="./assets/img/zaag-full.png" alt="plank interact" width="200">
+            <img class="step-interact__image" draggable="false" src="./assets/img/zaag-full.png" alt="plank interact" width="200">
           </div>
         </div>
         <div class="step-interact__wood">
-          <img src="./assets/img/plank-interact.png" alt="plank interact" width="240" height="auto">
+          <div class="step-interact__circle-one">
+          </div>
+          <div class="step-interact__circle-two"></div>
+          <div class="step-saw" ><img src="./assets/img/zaagdraai.png" class="image-saw-step" id="1" width="100" alt=""></div>
+          <img src="./assets/img/wood.png" draggable="false" alt="plank interact" width="270" height="auto">
         </div>
       </div>
 

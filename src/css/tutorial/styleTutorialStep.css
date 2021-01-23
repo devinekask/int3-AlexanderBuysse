@@ -143,8 +143,6 @@
 
 .step-interact__saw {
   background-color: var(--backgroundWhite);
-  width: 94%;
-  height: 20vw;
 }
 
 .step-interact__wood {
@@ -173,7 +171,9 @@
 
 .step-interact__yellowLine {
   border: solid var(--mainColor) .3rem;
-  padding: 0 2rem;
+  padding: .2rem;
+  width: 21rem;
+  height: 7.2rem;
 }
 
 .step-interact__yellowLine-wood {

@@ -55,8 +55,10 @@
 }
 
 .step__goal-label {
+  margin-top: 1.5rem;
   display: flex;
   cursor: pointer;
+  align-items: center;
 }
 
 .step__title {
@@ -97,15 +99,19 @@
   height: 20vw;
 }
 
+.step-interact__wood {
+  background-color: var(--backgroundWhite);
+}
+
+.step-interact__wood-two {
+  background-color: var(--backgroundWhite);
+  padding: 1.2rem;
+}
+
 .step-interact__saw-black {
   background-color: var(--mainBlack);
   width: 94%;
   height: 20vw;
-}
-
-.step-interact__wood {
-  padding: .5rem;
-  background-color: var(--backgroundWhite);
 }
 
 .step-interact__wood-black {
@@ -113,9 +119,18 @@
   background-color: var(--mainBlack);
 }
 
+.step__two-interact__yellowLine {
+  padding: 2rem;
+}
+
 .step-interact__yellowLine {
   border: solid var(--mainColor) .3rem;
   padding: 0 2rem;
+}
+
+.step-interact__yellowLine-wood {
+  border: solid var(--mainColor) .3rem;
+  padding: .2rem;
 }
 
 .step-interact__button {
@@ -128,4 +143,12 @@
   align-items: center;
   z-index: 2;
   cursor: grab;
+}
+
+.arrow-before {
+  content: '';
+  background-image: url(../../assets/img/arrow-mobile.png);
+  width: 100vw;
+  height: 8.8rem;
+  background-position: center;
 }

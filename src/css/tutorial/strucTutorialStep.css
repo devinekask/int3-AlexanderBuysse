@@ -3,7 +3,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 25vw 1fr auto 40vw;
   grid-column-gap: 4vw;
-  grid-template-areas: 'content content content content content navi' 'content1 content1 content1 content1 content1 navi' 'content2 content2 content2 content2 content2 navi' 'content3 content3 content3 content3 content3 content3';
+  grid-template-areas: 'content content content content content navi' 'content1 content1 content1 content1 content1 navi' 'content2 content2 content2 content2 content2 content2' 'content3 content3 content3 content3 content3 content3';
 }
 
 .step {
@@ -21,7 +21,7 @@
 }
 
 .step-three__goals {
-  grid-template-rows: 25vw 1fr auto 60vw;
+  grid-template-rows: 25vw 1fr auto 73vw;
 }
 
 .step-black__image {

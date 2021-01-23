@@ -56,9 +56,57 @@
 
 .step__goal-label {
   margin-top: 1.5rem;
-  display: flex;
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
   cursor: pointer;
-  align-items: center;
+  user-select: none;
+}
+
+.step__goal-label .step__goal-check {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #eee;
+}
+
+.step__goal-label:hover .step__goal-check ~ .checkmark {
+  background-color: #ccc;
+}
+
+.step__goal-label .step__goal-check:checked ~ .checkmark {
+  background-color: var(--mainBlack);
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.step__goal-label .checkmark::after {
+  left: .9rem;
+  top: .5rem;
+  width: .5rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 .3rem .3rem 0;
+  transform: rotate(45deg);
+}
+
+.step__goal-label .step__goal-check:checked ~ .checkmark::after {
+  display: block;
 }
 
 .step__title {

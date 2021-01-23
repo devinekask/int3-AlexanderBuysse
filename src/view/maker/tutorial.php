@@ -69,18 +69,19 @@
 
       <section class="step__goal">
         <h2 class="section-title stepGoal-title">To Do</h2>
+        <div claas="step__goal-labels">
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Zaag de eerste cirkel</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
 
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Zaag de eerste cirkel</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
-
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Zaag de tweede cirkel</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Zaag de tweede cirkel</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
+        </div>
       </section>
     </article>
   </div>
-  
+
   <div class="arrow-after">
   </div>
   <article class="step">
@@ -116,14 +117,15 @@
 
       <section class="step__goal">
         <h2 class="section-title stepGoal-title">To Do</h2>
+          <div class="step__goal-labels">
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Meet het bladblazer- <br> mondstuk</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
 
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Meet het bladblazer- <br> mondstuk</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
-
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Snij gat in cirkel 1</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Snij gat in cirkel 1</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
+        </div>
       </section>
   </article>
 
@@ -157,14 +159,19 @@
 
       <section class="step__goal">
         <h2 class="section-title stepGoal-title">To Do</h2>
+        <div class="step__goal-labels">
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Snij een cirkel uit het zeil.</p>
+            <input class="step__goal-check" type="checkbox">
+            <span class="checkmark"></span>
+          </label>
 
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Snij een cirkel uit het zeil.</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
-
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Leg hout op het zeil</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Leg hout op het zeil</p>
+            <input class="step__goal-check" type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
       </section>
     </article>
 
@@ -179,7 +186,7 @@
           <li class="step-sources__item-white"><img src="./assets/img/hout1wit.png" alt="hout" class="step-sources__image" width="90"></li>
           <li class="step-sources__item-white"><img src="./assets/img/bladblazerwit.png" alt="bladblazer" width="67"></li>
         </ul>
-        <p class="step-one__text-black">Zaag een gat ter grootte van een bladblazermondstuk in je de eerste cirkel.</p>
+        <p class="step-one__text-black">Vouw de restjes zeildoek toe en plak ze vast met ducktape.</p>
       </div>
 
       <div class="step-interact">
@@ -242,19 +249,19 @@
 
       <section class="step__goal">
         <h2 class="section-title stepGoal-title">To Do</h2>
+        <div class="step__goal-labels">
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Schroef de houten <br> cirkel vast</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
 
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Schroef de houten <br> cirkel vast</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Snijluchtgaten in <br>het zeil</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
 
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Snijluchtgaten in <br>het zeil</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
-
-        <label class="step__goal-label">
-          <p class="section-title step__goal-title">Plaats de Bladblazer</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
-        </label>
-
+          <label class="step__goal-label">
+            <p class="section-title step__goal-title">Plaats de Bladblazer</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          </label>
+        </div>
       </section>
   </article>
 

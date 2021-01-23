@@ -23,11 +23,12 @@
     let dragSrcEl = null;
 
     const handleDragStart = e => {
-      this.style.opacity = '0.4';
-      dragSrcEl = this;
+      console.log(e.target);
+      e.target.style.opacity = '0.4';
+      dragSrcEl = e.target;
 
       e.dataTransfer.effectAllowed = 'move';
-      e.dataTransfer.setData('text/html', this.innerHTML);
+      e.dataTransfer.setData('text/html', e.target.innerHTML);
     };
 
     const handleDragOver = e => {
@@ -41,34 +42,37 @@
     };
 
     const handleDragEnter = e => {
-      this.classList.add('over');
+      e.target.classList.add('over');
     };
 
-    function handleDragLeave(e) {
-      this.classList.remove('over');
-    }
+    const handleDragLeave = e => {
+      e.target.classList.remove('over');
+    };
 
-    function handleDrop(e) {
-      if (e.stopPropagation) {
-        e.stopPropagation(); // stops the browser from redirecting.
-      }
-      console.log(this);
+    const handleDrop = e => {
+      console.log(e.target, `een`);
 
-      if (dragSrcEl != this) {
-        dragSrcEl.innerHTML = this.innerHTML;
-        this.innerHTML = e.dataTransfer.getData('text/html');
+      if (dragSrcEl != e.target) {
+        dragSrcEl.innerHTML = e.target.innerHTML;
+        if (dragSrcEl.classList[1] === `box-image`) {
+          dragSrcEl.classList.remove(`box-image`);
+          e.target.classList.add(`box-image`);
+        } else {
+          dragSrcEl.classList.add(`box-image`);
+          e.target.classList.remove(`box-image`);
+        }
+        e.target.innerHTML = e.dataTransfer.getData('text/html');
       }
 
       return false;
-    }
+    };
 
-    function handleDragEnd(e) {
-      this.style.opacity = '1';
-
+    const handleDragEnd = e => {
+      e.target.style.opacity = '1';
       items.forEach(function (item) {
         item.classList.remove('over');
       });
-    }
+    };
 
     const items = document.querySelectorAll('.container .box');
     items.forEach(item => {

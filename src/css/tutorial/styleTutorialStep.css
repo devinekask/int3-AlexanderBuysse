@@ -202,10 +202,15 @@
 }
 
 .box {
-  background-color: #ddd;
   border-radius: .5em;
   padding: 10px;
   cursor: move;
+}
+
+.boxtarget {
+  background-color: rgba(221, 221, 221, 0.37);
+  width: 20rem;
+  height: 17rem;
 }
 
 .box.over {
@@ -214,4 +219,14 @@
 
 [draggable] {
   user-select: none;
+}
+
+.box-image {
+  content: '';
+  background-image: url(../../assets/img/hout-staptwee.png);
+  background-size: 20rem 17.4rem;
+  height: 17.4rem;
+  width: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }

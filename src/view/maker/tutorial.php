@@ -150,15 +150,13 @@
               <img src="./assets/img/hand.png" alt="hand" width="20">
             </div>
             <div class="container">
-              <div class="box" draggable="true">
-                <img src="./assets/img/hout-staptwee.png" alt="plank interact" width="200">
-              </div>
+              <div class="box box-image" draggable="true"></div>
             </div>
           </div>
         </div>
         <div class="step-interact__zeil">
           <div class="container">
-            <div class="box" draggable="true"></div>
+            <div class="box boxtarget" draggable="true"></div>
           </div>
           <img src="./assets/img/zeil-breekmes.png" alt="plank interact" width="290" height="auto">
         </div>

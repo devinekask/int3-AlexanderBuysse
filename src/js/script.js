@@ -18,15 +18,7 @@ import Splide from '@splidejs/splide';
     }
   ];
 
-  const handleDragoverInteract = e => {
-    e.preventDefault();
-    console.log(`grab`);
-  };
-
-  const handleDragenterWood = e => {
-    console.log(e.target);
-  };
-
+  //shop
   const handleInputInput = e => {
     const maxLength = e.target.getAttribute(`maxlength`);
     const $counter = e.target.parentElement.querySelector(`.label-counter`);
@@ -156,6 +148,7 @@ import Splide from '@splidejs/splide';
       $shopBanner.classList.add(`shop-banner-green`);
     }
   };
+  //shop
 
 
   const init = () => {
@@ -165,18 +158,6 @@ import Splide from '@splidejs/splide';
         width: '70vw',
         height: `auto`,
       }).mount();
-    }
-
-
-    //tutorial
-    const $interactField = document.querySelector(`.step-interact__yellowLine`);
-    if ($interactField) {
-      $interactField.addEventListener(`dragover`, handleDragoverInteract);
-    }
-
-    const $wood = document.querySelector(`.step-interact__wood`);
-    if ($wood) {
-      $wood.addEventListener(`dragenter`, handleDragenterWood);
     }
 
 
@@ -198,19 +179,12 @@ import Splide from '@splidejs/splide';
       })
     );
 
-    const removeButtons = document.querySelectorAll(`.remove`);
-    if (removeButtons) {
-      removeButtons.forEach(removeButton => {
-        removeButton.addEventListener(`click`, handleClickRemoveButton);
-      });
-    }
-
-    /*const shopButtonsRemove = document.querySelectorAll(`.shop-button-red`);
-    if (shopButtonsRemove) {
-      shopButtonsRemove.forEach(shopButtonRemove => {
-        shopButtonRemove.addEventListener(`click`, handleClickRemoveButton);
-      });
-    }*/
+    // const removeButtons = document.querySelectorAll(`.remove`);
+    // if (removeButtons) {
+    //   removeButtons.forEach(removeButton => {
+    //     removeButton.addEventListener(`click`, handleClickRemoveButton);
+    //   });
+    // }
 
     const $shopForm = document.querySelector(`.shop-form`);
     if ($shopForm) {

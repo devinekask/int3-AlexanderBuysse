@@ -149,10 +149,17 @@
             <div class="step-interact__button">
               <img src="./assets/img/hand.png" alt="hand" width="20">
             </div>
-            <img src="./assets/img/hout-staptwee.png" alt="plank interact" width="200">
+            <div class="container">
+              <div class="box" draggable="true">
+                <img src="./assets/img/hout-staptwee.png" alt="plank interact" width="200">
+              </div>
+            </div>
           </div>
         </div>
         <div class="step-interact__zeil">
+          <div class="container">
+            <div class="box" draggable="true"></div>
+          </div>
           <img src="./assets/img/zeil-breekmes.png" alt="plank interact" width="290" height="auto">
         </div>
       </div>

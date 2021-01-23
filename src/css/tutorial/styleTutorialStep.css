@@ -200,3 +200,18 @@
   height: 8.8rem;
   background-position: center;
 }
+
+.box {
+  background-color: #ddd;
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+}
+
+.box.over {
+  border: .3rem dotted #666;
+}
+
+[draggable] {
+  user-select: none;
+}

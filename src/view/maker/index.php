@@ -1,4 +1,4 @@
-<main class="container container-home">
+<main class="container-home">
     <nav class="home-navi">
       <a href="index.php?page=shop" class="button">Koop <br> benodigdheden</a>
     </nav>

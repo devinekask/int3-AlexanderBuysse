@@ -6,6 +6,7 @@
 
 @custom-media --only-smallest-screen (width >= 400px);
 @custom-media --only-small-screen (width >= 500px);
+@custom-media --only-520-screen (width >= 520px);
 @custom-media --only-biggerSmall-screen (width >= 600px);
 @custom-media --only-medium-screen (width >= 700px);
 @custom-media --only-mediumShop-screen (width >= 744px);

@@ -53,6 +53,12 @@
         Een van straal 60 cm en een van straal 5 cm.</p>
       </div>
 
+      <div class="tip">
+        <h2 class="section-title stepGoal-title">TIP</h2>
+        <p class="margin-bottom">Denk je ook aan de veiligheid van je werkplaats?</p>
+        <a href="index.php?page=shop" class=button-home>Koop <br> veiligheids kit</a>
+      </div>
+
       <div class="step-interact max">
         <div class="step-interact__saw">
           <div class="step-interact__yellowLine">

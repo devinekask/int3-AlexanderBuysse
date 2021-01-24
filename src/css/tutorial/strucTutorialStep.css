@@ -7,7 +7,7 @@
 
   @media (--only-biggerMedium-screen) {
     grid-template-rows: 7vw 1fr auto;
-    grid-template-areas: 'content content content content tip tip' 'content1 content1 content1 . . .' 'content2 content2 content2 content3 content3 content3';
+    grid-template-areas: 'content content content . . .' 'content1 content1 content1 . tip tip' 'content2 content2 content2 content3 content3 content3';
   }
 }
 
@@ -368,4 +368,22 @@
 
 .canvas {
   z-index: 3;
+}
+
+.tip {
+  display: none;
+  grid-area: tip;
+
+  @media (--only-biggerMedium-screen) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundWhite);
+    text-align: center;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 1.2rem;
 }

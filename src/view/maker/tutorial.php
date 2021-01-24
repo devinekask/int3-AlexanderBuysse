@@ -101,34 +101,37 @@
         <p class="step-one__text-black">Zaag een gat ter grootte van een bladblazermondstuk in je de eerste cirkel.</p>
       </div>
 
-      <div class="step-interact">
+      <div class="step-interact-meter-saw dashed-grey">
         <div class="step-interact__saw-black grid">
-          <div class="step-interact__yellowLine black">
+          <div class="step-interact__yellowLine-meter-saw black">
             <div class="step-interact__button">
               <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
             <img class="step-interact__image-white" src="./assets/img/sawfullwit.png" alt="plank interact" width="150">
           </div>
-          <div class="black middle-real">
+          <div class="black interact-rolmeter middle-real">
             <div class="step-interact__button pos-hand">
               <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
-            <img src="./assets/img/rolmeter-wit.png" alt="rol meter" width="60">
+            <img class="image-rolmeter" src="./assets/img/rolmeter-wit.png" alt="rol meter" width="60">
           </div>
         </div>
         <div class="step-interact__wood-black middle">
-          <img class="rotate" src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
+          <div class="rolmeter">
+            <canvas class="canvas" id="canvas" width="200" height="250"></canvas>
+            <img class="rotate" src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
+          </div>
         </div>
         <div class="step-interact__wood-black middle-real">
           <img src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
         </div>
       </div>
 
-      <section class="step__goal">
+      <section class="step__goal goal-step2">
         <h2 class="section-title stepGoal-title">To Do</h2>
           <div class="step__goal-labels">
           <label class="step__goal-label">
-            <p class="section-title step__goal-title">Meet het bladblazer- <br> mondstuk</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+            <p class="section-title step__goal-title">Meet het bladblazer- <br> mondstuk</p><input class="step__goal-check goal-meter" type="checkbox"><span class="checkmark"></span>
           </label>
 
           <label class="step__goal-label">
@@ -173,7 +176,7 @@
           </div>
         </div>
 
-        <section class="step__goal">
+        <section class="step__goal goal-step2">
           <h2 class="section-title stepGoal-title">To Do</h2>
           <div class="step__goal-labels">
             <label class="step__goal-label">
@@ -228,7 +231,7 @@
         </div>
       </div>
 
-      <section class="step__goal">
+      <section class="step__goal goal-step2">
         <h2 class="section-title stepGoal-title">To Do</h2>
 
         <label class="step__goal-label">

@@ -44,6 +44,18 @@
   position: relative;
 }
 
+.rolmeter-icon {
+  cursor: url(../../assets/img/rolmeter-cursor.png) 30 30, auto;
+}
+
+.rolmeter {
+  height: 25rem;
+  width: 20rem;
+  display: grid;
+  grid-template-rows: 0 0;
+  grid-template-columns: 0 0;
+}
+
 .pos-hand {
   top: 15%;
   right: -42%;
@@ -57,11 +69,11 @@
 .middle {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .rotate {
   transform: rotate(100deg);
+  margin-top: 6rem;
 }
 
 .dashed-grey {
@@ -232,7 +244,7 @@
 }
 
 .step-interact__wood-black {
-  padding: .5rem;
+  padding: 1.5rem;
   background-color: var(--mainBlack);
   position: relative;
 }
@@ -251,6 +263,12 @@
     width: 7.8rem;
     height: 100%;
   }
+}
+
+.step-interact__yellowLine-meter-saw {
+  position: relative;
+  border: solid var(--mainColor) .3rem;
+  padding: .2rem;
 }
 
 .step-interact__yellowLine-wood {

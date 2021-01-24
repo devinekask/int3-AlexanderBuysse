@@ -66,6 +66,28 @@
   const handleClick = () => {
     const number = parseInt(document.querySelector(`.image-saw-step`).getAttribute(`id`));
     const firstStep = document.querySelector(`.beyond`);
+
+    if (number === 11) {
+      document.querySelector(`.wood-incomplete`).src = `./assets/img/wood1.png`;
+      document.querySelector(`.check-hout1`).checked = true;
+
+      //niewue cirkel
+      const woodTop = document.querySelector(`.wood-top`);
+      woodTop.removeEventListener(`click`, handleClick);
+      woodTop.classList.remove(`wood-top`);
+      document.querySelector(`.step-interact__circle-two`).innerHTML = `<div class="wood-top wood-top2"><img class="wood-incomplete wood-incomplete-small" src="./assets/img/hout-staptwee-klein.png" alt="hout klein" width="75"></div>`;
+      document.querySelector(`.step-interact__circle-two`).classList.remove(`dashed`);
+      document.querySelector(`.wood-top2`).addEventListener(`click`, handleClick);
+      document.querySelector(`.step-interact__circle-two`).classList.add(`wood-incomplete-two`);
+      document.querySelector(`.step-interact__circle-one`).classList.remove(`z-prior`);
+    }
+    if (number === 15) {
+      document.querySelector(`.wood-incomplete-small`).src = `./assets/img/houtklein.png`;
+      document.querySelector(`.check-hout2`).checked = true;
+      document.querySelector(`.wood-top2`).removeEventListener(`click`, handleClick);
+      const saw = document.querySelector(`.step-saw`);
+      saw.parentElement.removeChild(saw);
+    }
     if (firstStep === null) {
       document.querySelector(`.step-saw`).classList.add('step-saw1');
       document.querySelector(`.step-saw`).classList.add('beyond');
@@ -73,11 +95,6 @@
     } else {
       newStep(number);
       document.querySelector(`.image-saw-step`).setAttribute(`id`, number + 1);
-    }
-
-    if (number === 11) {
-      document.querySelector(`.wood-incomplete`).src = `./assets/img/wood1.png`;
-      document.querySelector(`.check-hout1`).checked = true;
     }
   };
 

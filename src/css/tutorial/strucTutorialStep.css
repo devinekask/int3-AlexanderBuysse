@@ -125,7 +125,6 @@
   width: 15rem;
   height: 15rem;
   border-radius: 30rem;
-  z-index: 2;
 }
 
 .dashed {
@@ -195,9 +194,36 @@
   transform: translate(-.9rem, -2.3rem) rotate(352deg);
 }
 
+.step-saw12 {
+  transition: transform 1s;
+  transform: translate(-.9rem, .7rem) rotate(197deg);
+}
+
+.step-saw13 {
+  transition: transform 1s;
+  transform: translate(6.1rem, 4.7rem) rotate(107deg);
+}
+
+.step-saw14 {
+  transition: transform 1s;
+  transform: translate(8.1rem, .7rem) rotate(17deg);
+}
+
+.step-saw15 {
+  transition: transform 1s;
+  transform: translate(5.1rem, -2.3rem) rotate(-74deg);
+}
+
 .wood-top {
-  z-index: 2;
   cursor: pointer;
+}
+
+.wood-incomplete-two {
+  z-index: 3;
+}
+
+.z-prior {
+  z-index: 2;
 }
 
 .step-interact__circle-two {
@@ -206,7 +232,6 @@
   right: 14%;
   width: 7.5rem;
   height: 7.5rem;
-  border: dashed .5rem var(--mainBlack);
   border-radius: 30rem;
 }
 

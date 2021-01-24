@@ -63,9 +63,10 @@
           </div>
         </div>
         <div class="step-interact__wood">
-          <div class="step-interact__circle-one dashed">
+          <div class="step-interact__circle-one z-prior dashed">
           </div>
-          <div class="step-interact__circle-two dashed"></div>
+          <div class="step-interact__circle-two dashed">
+          </div>
           <img src="./assets/img/wood.png" draggable="false" alt="plank interact" width="270" height="auto">
         </div>
       </div>

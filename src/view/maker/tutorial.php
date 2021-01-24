@@ -102,21 +102,24 @@
       </div>
 
       <div class="step-interact">
-        <div class="step-interact__saw-black">
-          <div class="step-interact__yellowLine">
+        <div class="step-interact__saw-black grid">
+          <div class="step-interact__yellowLine black">
             <div class="step-interact__button">
-              <img src="./assets/img/hand.png" alt="hand" width="20">
-            </div>
-            <div>
-              <img src="" alt="">
+              <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
             <img class="step-interact__image-white" src="./assets/img/sawfullwit.png" alt="plank interact" width="150">
           </div>
+          <div class="black middle-real">
+            <div class="step-interact__button pos-hand">
+              <img src="./assets/img/point.png" alt="hand" width="15">
+            </div>
+            <img src="./assets/img/rolmeter-wit.png" alt="rol meter" width="60">
+          </div>
         </div>
-        <div>
-          <img src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
+        <div class="step-interact__wood-black middle">
+          <img class="rotate" src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
         </div>
-        <div class="step-interact__wood-black">
+        <div class="step-interact__wood-black middle-real">
           <img src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
         </div>
       </div>
@@ -151,7 +154,7 @@
           <p class="step-one__text">Snij een cirkel uit het zeildoek van straal 80cm en leg de grote houten cirkel perfect in het midden.</p>
         </div>
 
-        <div class="step-interact-two">
+        <div class="step-interact-two dashed-grey">
           <div class="step-interact__wood-two">
             <div class="step-interact__yellowLine-wood">
               <div class="step-interact__button">

@@ -142,7 +142,8 @@
 }
 
 .step-interact__image-white {
-  margin-top: -2.5rem;
+  margin-top: -.5rem;
+  margin-left: 1rem;
 }
 
 .step-interact__wood {
@@ -296,14 +297,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+
   position: relative;
 }
 
 .step-interact__button {
   position: absolute;
-  top: 6%;
-  right: -15%;
+  top: 16%;
+  right: -2%;
   transition: 1s ease-in top;
   transition: 1s ease-in right;
 }

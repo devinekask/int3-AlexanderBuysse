@@ -48,6 +48,10 @@
   cursor: url(../../assets/img/rolmeter-cursor.png) 30 30, auto;
 }
 
+.saw-icon {
+  cursor: url(../../assets/img/saw-icon.png) 30 30, auto;
+}
+
 .rolmeter {
   height: 25rem;
   width: 20rem;

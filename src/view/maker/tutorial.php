@@ -103,7 +103,7 @@
 
       <div class="step-interact-meter-saw dashed-grey">
         <div class="step-interact__saw-black grid">
-          <div class="step-interact__yellowLine-meter-saw black">
+          <div class="step-interact__yellowLine-meter-saw interact-saw-meter black">
             <div class="step-interact__button">
               <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
@@ -122,8 +122,8 @@
             <img class="rotate" src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
           </div>
         </div>
-        <div class="step-interact__wood-black middle-real">
-          <img src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
+        <div class="step-interact__wood-black interact-saw-meter-cursor middle-real ">
+          <img class="black2" src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
         </div>
       </div>
 
@@ -135,7 +135,7 @@
           </label>
 
           <label class="step__goal-label">
-            <p class="section-title step__goal-title">Snij gat in cirkel 1</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+            <p class="section-title step__goal-title">Snij gat in cirkel 1</p><input class="step__goal-check goal-meter-saw" type="checkbox"><span class="checkmark"></span>
           </label>
         </div>
       </section>

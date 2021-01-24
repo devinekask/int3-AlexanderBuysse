@@ -58,50 +58,68 @@
     return Math.round(c);
   };
 
+  const handleClickBlack = e => {
+    document.querySelector(`.black2`).src = `./assets/img/hout1wit3.png`;
+    document.querySelector(`.goal-meter-saw`).checked = true;
+  };
+
+  const handleClickSaw = e => {
+    e.target.classList.add(`opacity`);
+    document.querySelector(`.interact-saw-meter-cursor`).classList.add(`saw-icon`);
+    document.querySelector(`.black2 `).addEventListener(`click`, handleClickBlack);
+  };
+
   const init = () => {
-    const $canvas = document.querySelector(`#canvas`), ctx = $canvas.getContext(`2d`);
-    const circleMouse = new Circle();
-    circleMouse.radius = 5;
+    const $canvastest = document.querySelector(`.canvas`);
+    if ($canvastest) {
+      const $canvas = document.querySelector(`#canvas`), ctx = $canvas.getContext(`2d`);
 
-    const handleMousemoveCanvas = e => {
-      ctx.clearRect(0, 0, $canvas.width, $canvas.height);
-      circleMouse.location.x = e.offsetX;
-      circleMouse.location.y = e.offsetY;
-      circleMouse.draw(`#fae438`);
-      points.forEach(point => {
-        point.draw(`#fae438`);
+      const circleMouse = new Circle();
+      circleMouse.radius = 5;
+
+      const handleMousemoveCanvas = e => {
+        ctx.clearRect(0, 0, $canvas.width, $canvas.height);
+        circleMouse.location.x = e.offsetX;
+        circleMouse.location.y = e.offsetY;
+        circleMouse.draw(`#fae438`);
+        points.forEach(point => {
+          point.draw(`#fae438`);
+        });
+        if (points.length === 2) {
+          ctx.beginPath();
+          ctx.moveTo(points[0].location.x, points[0].location.y);
+          ctx.lineTo(points[1].location.x, points[1].location.y);
+          ctx.strokeStyle = `#fae438`;
+          ctx.lineWidth = 5;
+          ctx.stroke();
+          const dist = distance(points[0].location.x, points[1].location.x, points[0].location.y, points[1].location.y) / 5;
+          ctx.font = `30px Arial`;
+          ctx.fillText(`${dist} cm`, ($canvas.width / 2) - 10, 30);
+          $canvas.removeEventListener(`mousemove`, handleMousemoveCanvas);
+          $canvas.removeEventListener(`click`, handleClickCanvas);
+          document.querySelector(`.rolmeter`).classList.remove(`rolmeter-icon`);
+          document.querySelector(`.goal-meter`).checked = true;
+
+          document.querySelector(`.black2`).src = `./assets/img/hout1wit2.png`;
+          document.querySelector(`.interact-saw-meter`).addEventListener(`click`, handleClickSaw);
+        }
+      };
+
+      const handleClickCanvas = e => {
+        const circle1 = new Circle();
+        circle1.location.x = e.offsetX;
+        circle1.location.y = e.offsetY;
+        circle1.radius = 10;
+        points.push(circle1);
+      };
+
+      document.querySelector(`.interact-rolmeter`).addEventListener(`click`, e => {
+        $canvas.addEventListener(`mousemove`, handleMousemoveCanvas);
+        $canvas.addEventListener(`click`, handleClickCanvas);
+        document.querySelector(`.image-rolmeter`).classList.add(`display-none`);
+        document.querySelector(`.rolmeter`).classList.add(`rolmeter-icon`);
       });
-      if (points.length === 2) {
-        ctx.beginPath();
-        ctx.moveTo(points[0].location.x, points[0].location.y);
-        ctx.lineTo(points[1].location.x, points[1].location.y);
-        ctx.strokeStyle = `#fae438`;
-        ctx.lineWidth = 5;
-        ctx.stroke();
-        const dist = distance(points[0].location.x, points[1].location.x, points[0].location.y, points[1].location.y) / 5;
-        ctx.font = `30px Arial`;
-        ctx.fillText(`${dist} cm`, ($canvas.width / 2) - 10, 30);
-        $canvas.removeEventListener(`mousemove`, handleMousemoveCanvas);
-        $canvas.removeEventListener(`click`, handleClickCanvas);
-        document.querySelector(`.rolmeter`).classList.remove(`rolmeter-icon`);
-        document.querySelector(`.goal-meter`).checked = true;
-      }
-    };
-
-    const handleClickCanvas = e => {
-      const circle1 = new Circle();
-      circle1.location.x = e.offsetX;
-      circle1.location.y = e.offsetY;
-      circle1.radius = 10;
-      points.push(circle1);
-    };
-
-    document.querySelector(`.interact-rolmeter`).addEventListener(`click`, e => {
-      $canvas.addEventListener(`mousemove`, handleMousemoveCanvas);
-      $canvas.addEventListener(`click`, handleClickCanvas);
-      document.querySelector(`.image-rolmeter`).classList.add(`display-none`);
-      document.querySelector(`.rolmeter`).classList.add(`rolmeter-icon`);
-    });
+    }
 
 
   };

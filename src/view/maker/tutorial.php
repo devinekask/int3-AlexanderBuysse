@@ -200,34 +200,22 @@
     </div>
 
     <div class=" step-max">
-    <article class="step">
+    <article class="step-four">
       <h2 id="vier" class="section-title step__title">Stap <span class="step__title-number-white">4</span></h2>
 
       <div class="step-sources">
         <ul class="step-sources__items">
-          <li class="step-sources__item-white"><img src="./assets/img/hout1wit.png" alt="hout" class="step-sources__image" width="90"></li>
-          <li class="step-sources__item-white"><img src="./assets/img/bladblazerwit.png" alt="bladblazer" width="67"></li>
+          <li class="step-sources__item-white"><img src="./assets/img/ducktape-wit.png" alt="hout" class="" width="55"></li>
         </ul>
         <p class="step-one__text-black">Vouw de restjes zeildoek toe en plak ze vast met ducktape.</p>
       </div>
 
-      <div class="step-interact">
-        <div class="step-interact__saw-black">
-          <div class="step-interact__yellowLine">
-            <div class="step-interact__button">
-              <img src="./assets/img/hand.png" alt="hand" width="20">
+      <div class="step4-interact dashed-grey sequence">
+        <div class="step-interact__wood-black middle-real procent-height">
+            <div class="step-interact__button pos-hand4">
+              <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
-            <div>
-              <img src="" alt="">
-            </div>
-            <img class="step-interact__image-white" src="./assets/img/sawfullwit.png" alt="plank interact" width="150">
-          </div>
-        </div>
-        <div>
-          <img src="./assets/img/bladblazerwit.png" alt="bladblazer" width="200">
-        </div>
-        <div class="step-interact__wood-black">
-          <img src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
+          <img id="2" class="serie" src="./assets/videoserie/s1.png" alt="plank interact" width="366" height="auto">
         </div>
       </div>
 
@@ -235,7 +223,7 @@
         <h2 class="section-title stepGoal-title">To Do</h2>
 
         <label class="step__goal-label">
-          <p class="section-title step__goal-title">Ducktape de losse <br> stukken plastic vast</p><input class="step__goal-check" type="checkbox"><span class="checkmark"></span>
+          <p class="section-title step__goal-title">Ducktape de losse <br> stukken plastic vast</p><input class="step__goal-check goal-serie" type="checkbox"><span class="checkmark"></span>
         </label>
 
       </section>

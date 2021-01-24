@@ -333,3 +333,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.step4-interact {
+  grid-area: content2;
+}
+
+.procent-height {
+  height: 100%;
+}

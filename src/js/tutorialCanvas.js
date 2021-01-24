@@ -58,7 +58,7 @@
     return Math.round(c);
   };
 
-  const handleClickBlack = e => {
+  const handleClickBlack = () => {
     document.querySelector(`.black2`).src = `./assets/img/hout1wit3.png`;
     document.querySelector(`.goal-meter-saw`).checked = true;
   };

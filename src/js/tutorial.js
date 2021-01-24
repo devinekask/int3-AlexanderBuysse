@@ -114,7 +114,29 @@
     woodTop.addEventListener(`click`, handleClick);
   };
 
+  const handleClickSequence = () => {
+    const interval = setInterval(newImage => {
+      const $serie = document.querySelector(`.serie`);
+      const number = parseInt($serie.getAttribute(`id`));
+      const $button = document.querySelector(`.pos-hand4`);
+      if ($button) {
+        $button.parentElement.removeChild($button);
+      }
+      $serie.src = `./assets/videoserie/s${number}.png`;
+      $serie.setAttribute(`id`, number + 1);
+
+      if (number > 12) {
+        clearInterval(interval); // If exceeded 100, clear interval
+        document.querySelector(`.goal-serie`).checked = true;
+      }
+    }, 500);
+  };
+
   const init = () => {
+    const $sequence = document.querySelector(`.sequence`);
+    if ($sequence) {
+      $sequence.addEventListener(`click`, handleClickSequence);
+    }
 
     const sawButton = document.querySelector(`.step-interact__image`);
     if (sawButton) {

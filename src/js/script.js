@@ -1,4 +1,3 @@
-import webgazer from 'webgazer';
 {
   const kits = [
     {

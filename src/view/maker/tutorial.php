@@ -1,48 +1,44 @@
 <main class="container">
-  <div class="tutorial-one">
-    <nav>
+  <div class=" step-max">
+    <nav class="top middle-real">
       <a href="index.php?page=home" class=button-home>Home</a>
     </nav>
+    <div class="background">
+      <h1 class="header__title d3">De diy hoverscraft <span class="header__title-bold">TUTORIAL</span></h1>
+    </div>
+  <div class="tutorial-one">
 
     <article class="header">
-      <div class="header-background">
-        <h1 class="header__title d3">De diy hoverscraft <span class="header__title-bold">TUTORIAL</span></h1>
-      </div>
 
       <section class="header-section">
         <h2 class="section-title">De benodigdheden</h2>
-        <div id="image-slider" class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide"><img src="./assets/img/zaag1.png" alt="zaag" width="100"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
+            <ul class="xsplide__list">
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/bladblazerwit.png" alt="zaag" width="90"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/zaag-witklein.png" alt="zaag" width="90"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/rolmeter-wit.png" alt="zaag" width="90"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/ducktape-wit.png" alt="zaag" width="60"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/hout-wit.png" alt="zaag" width="70"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/zeil-wit.png" alt="zaag" width="90"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/nagel-wit.png" alt="zaag" width="10"></li>
+              <li class="xsplide__slide"><img class="slide-image" src="./assets/img/schroeven-wit.png" alt="zaag" width="55"></li>
             </ul>
-          </div>
-        </div>
       </section>
 
       <section class="header-section header-section__ready">
         <h2 class="section-title">Ben je er klaar voor?</h2>
         <p class="section__message"></p>
         <div class="header-section__buttons">
-          <a href="index.php?page=tutorial&step=0" class="button">Ja!</a>
+          <a href="index.php?page=tutorial#een" class="button">Ja!</a>
           <a href="" class="button">Nee...</a>
         </div>
       </section>
     </article>
   </div>
+</div>
 
   <div class=" step-black-max">
     <article class="step-black">
-      <h2 id="one" class="section-title white-color step__title">Stap <span class="step__title-number">1</span></h2>
+      <h2 id="een" class="section-title white-color step__title">Stap <span class="step__title-number">1</span></h2>
 
       <div class="step-sources">
         <div class="step-sources__items">
@@ -73,13 +69,13 @@
           </div>
           <div class="step-interact__circle-two dashed">
           </div>
-          <img src="./assets/img/wood.png" draggable="false" alt="plank interact" width="270" height="auto">
+          <img src="./assets/img/wood.png" draggable="false" alt="plank interact" width="270">
         </div>
       </div>
 
       <section class="step__goal goal-step1">
         <h2 class="section-title stepGoal-title">To Do</h2>
-        <div claas="step__goal-labels">
+        <div class="step__goal-labels">
           <label class="step__goal-label">
             <p class="section-title step__goal-title">Zaag de eerste cirkel</p><input class="step__goal-check check-hout1" type="checkbox"><span class="checkmark"></span>
           </label>
@@ -129,7 +125,7 @@
           </div>
         </div>
         <div class="step-interact__wood-black interact-saw-meter-cursor middle-real ">
-          <img class="black2" src="./assets/img/hout1wit.png" alt="plank interact" width="240" height="auto">
+          <img class="black2" src="./assets/img/hout1wit.png" alt="plank interact" width="240">
         </div>
       </div>
 
@@ -178,7 +174,7 @@
             <div class="container container-target">
               <div class="box boxtarget" draggable="true"></div>
             </div>
-            <img class="zeil" src="./assets/img/zeil-breekmes.png" alt="plank interact" width="330" height="auto">
+            <img class="zeil" src="./assets/img/zeil-breekmes.png" alt="plank interact" width="330">
           </div>
         </div>
 
@@ -221,7 +217,7 @@
             <div class="step-interact__button pos-hand4">
               <img src="./assets/img/point.png" alt="hand" width="15">
             </div>
-          <img id="2" class="serie" src="./assets/videoserie/s1.png" alt="plank interact" width="366" height="auto">
+          <img id="2" class="serie" src="./assets/videoserie/s1.png" alt="plank interact" width="366">
         </div>
       </div>
 
@@ -262,7 +258,7 @@
           </div>
         </div>
         <div class="step-interact__zeil">
-          <img src="./assets/img/zeil-breekmes.png" alt="plank interact" width="290" height="auto">
+          <img src="./assets/img/zeil-breekmes.png" alt="plank interact" width="290">
         </div>
       </div>
 
@@ -287,8 +283,8 @@
 
   <div class="arrow-after">
   </div>
-  <div>
-    <p>En nu</p>
-    <p>Racen maar</p>
+  <div class="middle-bottom">
+    <p class="small">En nu</p>
+    <p class="bigger">Racen maar</p>
   </div>
 </main>

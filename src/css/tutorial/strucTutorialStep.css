@@ -387,3 +387,46 @@
 .margin-bottom {
   margin-bottom: 1.2rem;
 }
+
+.middle-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.small {
+  font-size: 5vw;
+  font-weight: 800;
+}
+
+.bigger {
+  font-size: 10vw;
+  font-weight: 800;
+  margin-top: -4vw;
+}
+
+.xsplide__list {
+  display: flex;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+.xsplide__slide {
+  background-color: var(--mainBlack);
+  min-width: 10rem;
+  height: 10rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*align-self: center;*/
+}
+
+.slide-image {
+  align-self: center;
+}
+
+.container {
+  overflow-y: hidden;
+}

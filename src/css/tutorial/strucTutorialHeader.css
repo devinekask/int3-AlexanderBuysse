@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10vw;
+}
+
+.top {
+  margin-top: 2rem;
 }
 
 .header {
-  margin-top: 10vw;
+  margin: 0 auto;
 
   @media (--only-medium-screen) {
     margin-top: 2vw;
@@ -14,7 +17,7 @@
 }
 
 .header-section {
-  margin-top: 10vw;
+  margin-top: 7vw;
   padding-left: 2vw;
 }
 
@@ -33,7 +36,7 @@
 }
 
 .header-background {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .header__items {

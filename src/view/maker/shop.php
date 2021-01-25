@@ -3,7 +3,7 @@
       <a href="index.php?page=index" class="button">Home</a>
     </nav>
     <article class="header header-home">
-        <h1 class="display-none"></h1>
+        <h1 class="display-none">shop</h1>
         <div class="shop-wrap">
           <section class="shop-section margin-zero">
             <div class="shop-section__grap">

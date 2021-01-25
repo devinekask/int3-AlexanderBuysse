@@ -13,6 +13,13 @@
   width: 100%;
 }
 
+.background {
+  background-image: url(../../assets/img/lineheader-mobile.svg);
+  background-size: cover;
+  width: 100%;
+  padding: 6rem 0;
+}
+
 .header__title {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 900;

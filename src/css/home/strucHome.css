@@ -36,11 +36,12 @@
   margin-top: -6rem;
 
   @media (--only-biggerSmall-screen) {
-    margin-top: -8rem;
+    margin-top: -16vw;
   }
 
   @media (--only-medium-screen) {
-    width: 40rem;
+    margin-top: -8vw;
+    width: 50rem;
   }
 }
 
@@ -62,7 +63,7 @@
 
 .section-home__text {
   margin-top: 2rem;
-  max-width: 70vw;
+  max-width: 60vw;
 }
 
 .header-home__image-ground {

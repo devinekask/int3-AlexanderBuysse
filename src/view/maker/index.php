@@ -22,9 +22,18 @@
           <p class="section-home__text center">Proficiat je hebt de eerste stap gezet naar de jaloerse blikken van je vrienden. je hebt nu 2 keuzes (niet bang zijn je bent een grote jongen).</p>
           <div class="section-home__buttons">
             <a href="index.php?page=tutorial" class="button button-hands">Met je handen</a>
-            <a href="index.php?page=tutorial" class="button button-eye">Handsfree</a>
+            <a href="index.php?page=tutorial&handsfree=true" class="button button-eye">Handsfree</a>
           </div>
         </section>
+        <div class="logos">
+          <img class="logo" src="./assets/logos/logo1.png" alt="logo" width="100" height="49">
+          <img class="logo" src="./assets/logos/logo2.png" alt="logo" width="100" height="42">
+          <img class="logo" src="./assets/logos/logo3.png" alt="logo" width="100" height="63">
+          <img class="logo" src="./assets/logos/logo4.png" alt="logo" width="100" height="42">
+          <img class="logo" src="./assets/logos/logo5.png" alt="logo" width="100" height="42">
+          <img class="logo" src="./assets/logos/logo6.png" alt="logo" width="100" height="42">
+          <img class="logo" src="./assets/logos/logo7.png" alt="logo" width="100" height="34">
+        </div>
       </div>
     </article>
 </main>

@@ -1,4 +1,4 @@
-<main class="container tutorial">
+<main class="container <?php if (isset($_GET['handsfree'])) echo 'tutorial' ; ?>">
   <div class=" step-max">
     <nav class="top middle-real">
       <a href="index.php?page=home" class=button-home>Home</a>
@@ -25,7 +25,7 @@
       </section>
 
       <section class="header-section header-section__ready">
-        <?php if (isset($_GET['page'])): ?>
+        <?php if (isset($_GET['handsfree'])): ?>
           <p class="messagehandsfree">Om handsfree te besturen <em class="weight">druk je welke knop dan ook</em> en ga je naar de volgende stap.</p>
         <?php endif; ?>
         <h2 class="section-title">Ben je er klaar voor?</h2>

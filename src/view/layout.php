@@ -14,7 +14,6 @@
       echo $content;
     } ?>
    <?php echo $js; ?>
-    <script src="./js/gaze/webgazer.js"></script>
  </body>
 
  </html>

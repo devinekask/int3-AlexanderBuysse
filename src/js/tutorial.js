@@ -143,6 +143,29 @@
     }, 500);
   };
 
+  const handleClickStory = e => {
+    e.preventDefault();
+    let count = parseInt(e.target.getAttribute(`name`));
+    const $message = document.querySelector(`.section__message`);
+    const $buttonTwo = document.querySelector(`.story-button-two`);
+    if (count === 2) {
+      console.log(count);
+      $message.textContent = `Sommige problemen kan ik jammer genoeg niet oplossen maar ik heb gehoord dat een hovercraft bouwen therapeutisch werkt.`;
+      $buttonTwo.textContent = `Naar stap 1`;
+      $buttonTwo.href = `index.php?page=tutorial#een`;
+      e.target.parentElement.removeChild(e.target);
+    }
+    if (count === 1) {
+      console.log(count);
+      $message.textContent = `Oei, wat is er? Heb je niet alle benodigdheden?`;
+      $buttonTwo.textContent = `Naar shop`;
+      $buttonTwo.href = `index.php?page=shop`;
+      e.target.setAttribute(`name`, 2);
+      console.log(e.target);
+      e.target.textContent = `Toch wel`;
+    }
+  };
+
   const init = () => {
     const $sequence = document.querySelector(`.sequence`);
     if ($sequence) {
@@ -163,6 +186,11 @@
       item.addEventListener('drop', handleDrop);
       item.addEventListener('dragend', handleDragEnd);
     });
+
+    const $storyButton = document.querySelector(`.story-button-one`);
+    if ($storyButton) {
+      $storyButton.addEventListener(`click`, handleClickStory);
+    }
   };
   init();
 }

@@ -16,6 +16,11 @@
   }
 }
 
+.section__message {
+  margin-top: 1.2rem;
+  max-width: 60rem;
+}
+
 .header-section {
   margin-top: 7vw;
   padding-left: 2vw;

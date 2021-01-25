@@ -29,7 +29,7 @@
         <p class="section__message"></p>
         <div class="header-section__buttons">
           <a href="index.php?page=tutorial#een" class="button story-button-two">Ja!</a>
-          <a href="" class="button story-button-one">Nee...</a>
+          <a href="" name="1" class="button story-button-one">Nee...</a>
         </div>
       </section>
     </article>
@@ -96,7 +96,7 @@
       <h2 id="twee" class="section-title step__title">Stap <span class="step__title-number-white">2</span></h2>
       <div class="tip tip-black">
           <h2 class="section-title stepGoal-title">Maker Faire- 2021 </h2>
-          <p class="margin-bottom">Wist je dat op <em>30 april, 1 mei, 2mei</em> de Maker Faire wordt georganiseerd. Surf naar de site en ontdek meer.</p>
+          <p class="margin-bottom">Wist je dat op <em>30 april, 1 mei, 2mei</em> de Maker Faire wordt georganiseerd. Dit jaar in het thema van bewegen. Surf naar de site en ontdek meer.</p>
       </div>
 
       <div class="step-sources">

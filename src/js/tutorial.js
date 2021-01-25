@@ -37,22 +37,33 @@
       if (dragSrcEl.classList[1] === `box-image`) {
         dragSrcEl.classList.remove(`box-image`);
         e.target.classList.add(`box-image`);
-      } else {
+        gevolgenBoxImage(e);
+      } else if (e.target.classList[1] === `box-image`) {
         dragSrcEl.classList.add(`box-image`);
         e.target.classList.remove(`box-image`);
+        gevolgenBoxImage(e);
+      } else if (dragSrcEl.classList[1] === `box-image-two`) {
+        dragSrcEl.classList.remove(`box-image-two`);
+        e.target.classList.add(`box-image-two`);
+      } else if (e.target.classList[1] === `box-image-two`) {
+        dragSrcEl.classList.add(`box-image-two`);
+        e.target.classList.remove(`box-image-two`);
       }
-      e.target.innerHTML = e.dataTransfer.getData('text/html');
-      const image = document.querySelector(`.boxtarget`).classList.contains(`box-image`);
-      if (image) {
-        document.querySelector(`.zeil`).src = `./assets/img/zeil-interactie.png`;
-      }
-      const checks = document.querySelectorAll(`.check-zeil`);
-      checks.forEach(check => {
-        check.checked = true;
-      });
     }
 
     return false;
+  };
+
+  const gevolgenBoxImage = e => {
+    e.target.innerHTML = e.dataTransfer.getData('text/html');
+    const image = document.querySelector(`.boxtarget`).classList.contains(`box-image`);
+    if (image) {
+      document.querySelector(`.zeil`).src = `./assets/img/zeil-interactie.png`;
+    }
+    const checks = document.querySelectorAll(`.check-zeil`);
+    checks.forEach(check => {
+      check.checked = true;
+    });
   };
 
   const handleDragEnd = e => {

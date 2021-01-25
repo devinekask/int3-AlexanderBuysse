@@ -28,8 +28,8 @@
         <h2 class="section-title">Ben je er klaar voor?</h2>
         <p class="section__message"></p>
         <div class="header-section__buttons">
-          <a href="index.php?page=tutorial#een" class="button">Ja!</a>
-          <a href="" class="button">Nee...</a>
+          <a href="index.php?page=tutorial#een" class="button story-button-two">Ja!</a>
+          <a href="" class="button story-button-one">Nee...</a>
         </div>
       </section>
     </article>
@@ -92,8 +92,12 @@
   </div>
 
   <div class=" step-max">
-  <article class="step">
+  <article class="step step-content-grid">
       <h2 id="twee" class="section-title step__title">Stap <span class="step__title-number-white">2</span></h2>
+      <div class="tip tip-black">
+          <h2 class="section-title stepGoal-title">Maker Faire- 2021 </h2>
+          <p class="margin-bottom">Wist je dat op <em>30 april, 1 mei, 2mei</em> de Maker Faire wordt georganiseerd. Surf naar de site en ontdek meer.</p>
+      </div>
 
       <div class="step-sources">
         <ul class="step-sources__items">
@@ -172,7 +176,7 @@
           </div>
           <div class="step-interact__zeil">
             <div class="container container-target">
-              <div class="box boxtarget" draggable="true"></div>
+              <div class="box boxtarget box-width" draggable="true"></div>
             </div>
             <img class="zeil" src="./assets/img/zeil-breekmes.png" alt="plank interact" width="330">
           </div>
@@ -248,17 +252,31 @@
         <p class="step-one__text">Keer je creatie om en schroef de kleine houten cirkel vast in het midden. En snij rondom deze cirkel en 6 gaten waar lucht kan ontsnappen. Plak daarna de bladblazer vast en voila.</p>
       </div>
 
-      <div class="step-interact-two">
-        <div class="step-interact__wood-two">
+      <div class="step-interact-five dashed-grey ">
+        <div class="step-interact__wood-two grid-wood">
           <div class="step-interact__yellowLine-wood">
-            <div class="step-interact__button">
+            <div class="step-interact__button posi">
               <img src="./assets/img/hand.png" alt="hand" width="20">
             </div>
-            <img src="./assets/img/hout-staptwee.png" alt="plank interact" width="200">
+              <div class="container">
+                <div class="box box-image-two box-width-two" draggable="true"></div>
+              </div>
           </div>
         </div>
+        <div class="step-interact__wood-two grid-wood margin-left">
+          <div class="step-interact__yellowLine-wood">
+            <div class="step-interact__button posis">
+              <img src="./assets/img/point.png" alt="hand" width="15">
+            </div>
+            <img src="./assets/img/nagel.png" alt="plank interact" width="10">
+          </div>
+        </div>
+
         <div class="step-interact__zeil">
-          <img src="./assets/img/zeil-breekmes.png" alt="plank interact" width="290">
+            <div class="container container-target">
+              <div class="box boxtarget box-width-two" draggable="true"></div>
+            </div>
+          <img src="./assets/img/zeilomgekeerd.png" alt="plank interact" width="290">
         </div>
       </div>
 

@@ -2,7 +2,7 @@
     <nav class="home-navi">
       <a href="index.php?page=index" class="button">Home</a>
     </nav>
-    <article class="header header-home">
+    <article class="header header-section-one header-home">
         <h1 class="display-none">shop</h1>
         <div class="shop-wrap">
           <section class="shop-section margin-zero">

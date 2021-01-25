@@ -166,10 +166,29 @@
     }
   };
 
+  const handleKeydownDocu = e => {
+    let number = parseInt(document.querySelector(`.count-scroll`).getAttribute(`name`));
+    if (number === 0) {
+      document.querySelector(`.count-scroll`).setAttribute(`name`, number + 1);
+    } else if (number === 6) {
+      return;
+    } else {
+      document.getElementById(number).scrollIntoView({
+        behavior: 'smooth'
+      });
+      document.querySelector(`.count-scroll`).setAttribute(`name`, number + 1);
+    }
+  };
+
   const init = () => {
     const $sequence = document.querySelector(`.sequence`);
     if ($sequence) {
       $sequence.addEventListener(`click`, handleClickSequence);
+    }
+
+    const tutorial = document.querySelector(`.tutorial`);
+    if (tutorial) {
+      document.addEventListener('keydown', handleKeydownDocu);
     }
 
     const sawButton = document.querySelector(`.step-interact__image`);

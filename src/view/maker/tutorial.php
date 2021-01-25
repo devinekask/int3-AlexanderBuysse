@@ -1,10 +1,10 @@
-<main class="container">
+<main class="container tutorial">
   <div class=" step-max">
     <nav class="top middle-real">
       <a href="index.php?page=home" class=button-home>Home</a>
     </nav>
     <div class="background">
-      <h1 class="header__title d3">De diy hoverscraft <span class="header__title-bold">TUTORIAL</span></h1>
+      <h1 name="0" class=" count-scroll header__title d3">De diy hoverscraft <span class="header__title-bold">TUTORIAL</span></h1>
     </div>
   <div class="tutorial-one">
 
@@ -25,6 +25,9 @@
       </section>
 
       <section class="header-section header-section__ready">
+        <?php if (isset($_GET['page'])): ?>
+          <p class="messagehandsfree">Om handsfree te besturen <em class="weight">druk je welke knop dan ook</em> en ga je naar de volgende stap.</p>
+        <?php endif; ?>
         <h2 class="section-title">Ben je er klaar voor?</h2>
         <p class="section__message"></p>
         <div class="header-section__buttons">
@@ -38,7 +41,7 @@
 
   <div class=" step-black-max">
     <article class="step-black">
-      <h2 id="een" class="section-title white-color step__title">Stap <span class="step__title-number">1</span></h2>
+      <h2 id="1" class="section-title white-color step__title">Stap <span class="step__title-number">1</span></h2>
 
       <div class="step-sources">
         <div class="step-sources__items">
@@ -93,7 +96,7 @@
 
   <div class=" step-max">
   <article class="step step-content-grid">
-      <h2 id="twee" class="section-title step__title">Stap <span class="step__title-number-white">2</span></h2>
+      <h2 id="2" class="section-title step__title">Stap <span class="step__title-number-white">2</span></h2>
       <div class="tip tip-black">
           <h2 class="section-title stepGoal-title">Maker Faire- 2021 </h2>
           <p class="margin-bottom">Wist je dat op <em>30 april, 1 mei, 2mei</em> de Maker Faire wordt georganiseerd. Dit jaar in het thema van bewegen. Surf naar de site en ontdek meer.</p>
@@ -153,7 +156,7 @@
 
     <div class="step-black-max">
       <article class="step-black step-two">
-        <h2 id="drie" class="section-title white-color step__title">Stap <span class="step__title-number">3</span></h2>
+        <h2 id="3" class="section-title white-color step__title">Stap <span class="step__title-number">3</span></h2>
 
         <div class="step-sources">
           <div class="step-sources__items">
@@ -207,7 +210,7 @@
 
     <div class=" step-max">
     <article class="step-four">
-      <h2 id="vier" class="section-title step__title">Stap <span class="step__title-number-white">4</span></h2>
+      <h2 id="4" class="section-title step__title">Stap <span class="step__title-number-white">4</span></h2>
 
       <div class="step-sources">
         <ul class="step-sources__items">
@@ -241,7 +244,7 @@
 
   <div class="step-black-max">
   <article class="step-black   step-two step-three__goals">
-      <h2 id="vijf" class="section-title white-color step__title">Stap <span class="step__title-number">5</span></h2>
+      <h2 id="5" class="section-title white-color step__title">Stap <span class="step__title-number">5</span></h2>
 
       <div class="step-sources">
         <div class="step-sources__items">

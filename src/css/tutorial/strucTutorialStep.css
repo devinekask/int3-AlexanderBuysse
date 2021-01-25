@@ -477,3 +477,12 @@
   top: 20%;
   right: -302%;
 }
+
+.messagehandsfree {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.weight {
+  font-weight: 800;
+}

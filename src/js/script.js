@@ -1,4 +1,4 @@
-import Splide from '@splidejs/splide';
+import webgazer from 'webgazer';
 {
   const kits = [
     {
@@ -152,14 +152,18 @@ import Splide from '@splidejs/splide';
 
 
   const init = () => {
-    const $slider = document.querySelector(`.splide`);
-    if ($slider) {
-      new Splide(`#image-slider`, {
-        width: '70vw',
-        height: `auto`,
-      }).mount();
-    }
-
+    webgazer.setGazeListener(function(data, elapsedTime) {
+      if (data == null) {
+        return;
+      }
+      const xprediction = data.x; //these x coordinates are relative to the viewport
+      const yprediction = data.y; //these y coordinates are relative to the viewport
+      //console.log(data.x); //elapsed time is based on time since begin was called
+      //console.log(data.y); //elapsed time is based on time since begin was called
+      if (data.x > 800 && data.x < 900 && data.y > 890 && data.y < 990) {
+        document.querySelector(`.info`).textContent = `de knop is ingeduwd`;
+      }
+    }).begin();
 
     //shop
     const inputs = document.querySelectorAll(`.label-input`);

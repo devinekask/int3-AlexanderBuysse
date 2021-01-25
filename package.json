@@ -37,6 +37,7 @@
   "repository": "https://github.com/devinekask/int3-AlexanderBuysse",
   "author": "alexanderBuysse <alexander.buysse@student.howest.be>",
   "dependencies": {
-    "@splidejs/splide": "^2.4.21"
+    "@splidejs/splide": "^2.4.21",
+    "webgazer": "^2.0.1"
   }
 }

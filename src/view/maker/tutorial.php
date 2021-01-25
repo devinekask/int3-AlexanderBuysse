@@ -28,7 +28,7 @@
         <h2 class="section-title">Ben je er klaar voor?</h2>
         <p class="section__message"></p>
         <div class="header-section__buttons">
-          <a href="index.php?page=tutorial#een" class="button story-button-two">Ja!</a>
+          <a href="index.php?page=tutorial#een" class="button story-button-two">Begin eraan</a>
           <a href="" name="1" class="button story-button-one">Nee...</a>
         </div>
       </section>

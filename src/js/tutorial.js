@@ -152,7 +152,7 @@
       console.log(count);
       $message.textContent = `Sommige problemen kan ik jammer genoeg niet oplossen maar ik heb gehoord dat een hovercraft bouwen therapeutisch werkt.`;
       $buttonTwo.textContent = `Naar stap 1`;
-      $buttonTwo.href = `index.php?page=tutorial#een`;
+      $buttonTwo.href = `index.php?page=tutorial#1`;
       e.target.parentElement.removeChild(e.target);
     }
     if (count === 1) {

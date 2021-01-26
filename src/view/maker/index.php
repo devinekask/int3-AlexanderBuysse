@@ -19,7 +19,7 @@
         <p class="home__bigtext-text">Wil je opvallen bij je vrienden die van die gekke elektrische steps of 1-wielers hebben? Maar toch geen zin om er een fortuin aan te spenderen geen probleem bouw je eigen hovercraft.</p>
         <section class="header-section header-section-home">
           <h2 class="section-title">Kies hoe je de <span class="header-home__empha">tutorial</span> wilt volgen</h2>
-          <p class="section-home__text center">Proficiat je hebt de eerste stap gezet naar de jaloerse blikken van je vrienden. je hebt nu 2 keuzes (niet bang zijn je bent een grote jongen).</p>
+          <p class="section-home__text center">Proficiat je hebt de eerste stap gezet naar de jaloerse blikken van je vrienden. Je hebt nu 2 keuzes (niet bang zijn je bent een grote jongen).</p>
           <div class="section-home__buttons">
             <a href="index.php?page=tutorial" class="button button-hands">Met je handen</a>
             <a href="index.php?page=tutorial&handsfree=true" class="button button-eye">Handsfree</a>
